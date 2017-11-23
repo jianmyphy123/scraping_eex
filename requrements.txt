@@ -1,0 +1,5 @@
+scrapy
+selenium
+scrapy_proxies
+scrapy_random_useragent
+psycopg2
