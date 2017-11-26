@@ -1,4 +1,4 @@
 # Add your proxies here in format:
 # http://username:password@host:port
 
-http://localhost:80
+http://us-ca.proxymesh.com:31280

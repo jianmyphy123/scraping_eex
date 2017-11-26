@@ -1,0 +1,234 @@
+type,company,facility,unit,fuel,control_area,begin_ts,end_ts,limitation,reason,status,event_id,last_update
+Unscheduled Limitation,VERBUND,Schlegeis,Schlegeis,,APG,2017-11-20T07:00:00,2017-11-29T22:40:06,66,Outage,Active,X192475#2506,2017-11-26T22:40:11
+Unscheduled Limitation,VERBUND,Gößkar und Galgenbichel,Gößkar und Galgenbichel,,APG,2017-11-26T19:58:00,2017-11-29T21:00:00,145,Outage,Inactive,X192704#2474,2017-11-26T21:10:10
+Unscheduled Limitation,VERBUND,Gößkar und Galgenbichel,Gößkar und Galgenbichel,,APG,2017-11-26T19:58:00,2017-11-26T23:58:00,145,Maintenance,Inactive,X192705#2474,2017-11-26T21:10:10
+Unscheduled Limitation,KELAG,Koralpe/Speicher Soboth,Koralpe/Speicher Soboth,,APG,2017-11-26T09:00:00,2017-11-27T15:00:00,37,Outage,Active,3583-20171126-092657#2338,2017-11-26T15:30:15
+Unscheduled Limitation,KELAG,Pumpen/Speicher Feldsee,Pumpen/Speicher Feldsee,,APG,2017-11-26T09:00:00,2017-11-26T12:00:00,68,Outage,Active,3523-20171126-092759#2328,2017-11-26T12:47:58
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-09T07:00:00,2018-10-09T12:00:00,66,Maintenance,Active,AET111117364#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-02-20T07:00:00,2018-02-20T12:00:00,75,Maintenance,Active,AET111117326#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-26T17:00:00,2018-02-06T07:00:00,68,Maintenance,Active,AET111117323#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-06T17:00:00,2017-12-12T13:00:00,45,Maintenance,Active,AET11111736#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-08T07:00:00,2018-01-12T17:00:00,75,Maintenance,Active,AET111117320#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-05T17:00:00,2017-12-06T13:00:00,45,Maintenance,Active,AET11111734#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-21T17:00:00,2018-01-02T00:00:00,45,Maintenance,Active,AET111117318#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-06T17:00:00,2018-04-17T00:00:00,68,Maintenance,Active,AET111117337#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-01T22:00:00,2018-04-04T07:00:00,203,Maintenance,Active,AET111117333#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-10-07T14:00:00,2019-10-10T18:00:00,14,Maintenance,Active,AET111117395#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-20T13:00:00,2017-12-20T17:00:00,90,Maintenance,Active,AET111117315#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-13T13:00:00,2017-12-13T17:00:00,90,Maintenance,Active,AET11111739#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-14T17:00:00,2017-12-19T13:00:00,45,Maintenance,Active,AET111117312#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-02T07:00:00,2019-01-07T07:00:00,113,Maintenance,Active,AET111117382#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-21T07:00:00,2019-01-25T17:00:00,120,Maintenance,Active,AET111117385#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-13T17:00:00,2017-12-14T13:00:00,45,Maintenance,Active,AET111117310#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-12T17:00:00,2017-12-13T13:00:00,45,Maintenance,Active,AET11111738#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-11-19T07:00:00,2018-12-04T07:00:00,90,Maintenance,Active,AET111117377#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-03-20T07:00:00,2018-03-20T12:00:00,75,Maintenance,Active,AET111117330#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-12T13:00:00,2017-12-12T17:00:00,68,Maintenance,Active,AET11111737#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-10T07:00:00,2018-10-10T12:00:00,66,Maintenance,Active,AET111117366#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-03-06T07:00:00,2018-03-06T12:00:00,75,Maintenance,Active,AET111117328#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-02-06T12:00:00,2018-02-20T07:00:00,68,Maintenance,Active,AET111117325#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-08T14:00:00,2018-10-09T07:00:00,59,Maintenance,Active,AET111117363#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-22T07:00:00,2018-01-26T17:00:00,75,Maintenance,Active,AET111117322#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-06T13:00:00,2017-12-06T17:00:00,52,Maintenance,Active,AET11111735#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-11-29T17:00:00,2017-12-05T13:00:00,45,Maintenance,Active,AET11111732#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-17T07:00:00,2018-04-17T12:00:00,52,Maintenance,Active,AET111117339#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-21T13:00:00,2017-12-21T17:00:00,52,Maintenance,Active,AET111117317#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-04T12:00:00,2018-04-06T17:00:00,203,Maintenance,Active,AET111117335#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-04-29T17:00:00,2019-04-30T00:00:00,45,Maintenance,Active,AET111117391#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-19T17:00:00,2017-12-20T13:00:00,45,Maintenance,Active,AET111117314#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-03-31T22:00:00,2019-04-05T17:00:00,248,Maintenance,Active,AET111117388#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-14T13:00:00,2017-12-14T17:00:00,68,Maintenance,Active,AET111117311#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-12-18T12:00:00,2019-01-02T07:00:00,90,Maintenance,Active,AET111117381#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-11T17:00:00,2019-01-21T07:00:00,113,Maintenance,Active,AET111117384#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-11-29T13:00:00,2017-11-29T17:00:00,90,Maintenance,Active,AET11111731#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-12-04T12:00:00,2018-12-18T07:00:00,90,Maintenance,Active,AET111117379#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-11-19T00:00:00,2018-11-19T07:00:00,45,Maintenance,Active,AET111117376#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-05T13:00:00,2017-12-05T17:00:00,68,Maintenance,Active,AET11111733#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-11T18:00:00,2018-10-12T17:00:00,45,Maintenance,Active,AET111117368#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-09T12:00:00,2018-10-10T07:00:00,59,Maintenance,Active,AET111117365#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-02-20T12:00:00,2018-03-06T07:00:00,68,Maintenance,Active,AET111117327#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-02-06T07:00:00,2018-02-06T12:00:00,75,Maintenance,Active,AET111117324#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-08T07:00:00,2018-10-08T14:00:00,45,Maintenance,Active,AET111117362#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-12T17:00:00,2018-01-22T07:00:00,68,Maintenance,Active,AET111117321#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-17T12:00:00,2018-04-30T17:00:00,45,Maintenance,Active,AET111117340#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-02T00:00:00,2018-01-08T07:00:00,68,Maintenance,Active,AET111117319#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-17T00:00:00,2018-04-17T07:00:00,45,Maintenance,Active,AET111117338#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-20T17:00:00,2017-12-21T13:00:00,45,Maintenance,Active,AET111117316#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-04T07:00:00,2018-04-04T12:00:00,210,Maintenance,Active,AET111117334#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-04-05T17:00:00,2019-04-29T17:00:00,90,Maintenance,Active,AET111117390#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-19T13:00:00,2017-12-19T17:00:00,53,Maintenance,Active,AET111117313#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-25T17:00:00,2019-03-31T22:00:00,113,Maintenance,Active,AET111117386#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2020-03-30T22:00:00,2020-04-03T17:00:00,135,Maintenance,Active,AET1111173100#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-07T07:00:00,2019-01-11T17:00:00,120,Maintenance,Active,AET111117383#2553,2017-11-25T11:50:09
+Unscheduled,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-11-12T21:00:00,2017-11-29T13:00:00,45,Maintenance,Active,AET11111730#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-12-18T07:00:00,2018-12-18T12:00:00,97,Maintenance,Active,AET111117380#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-12-04T07:00:00,2018-12-04T12:00:00,97,Maintenance,Active,AET111117378#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-03-20T12:00:00,2018-04-01T22:00:00,68,Maintenance,Active,AET111117331#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-22T07:00:00,2018-10-26T17:00:00,45,Maintenance,Active,AET111117370#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-03-06T12:00:00,2018-03-20T07:00:00,68,Maintenance,Active,AET111117329#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-10T12:00:00,2018-10-11T18:00:00,59,Maintenance,Active,AET111117367#2553,2017-11-25T11:50:09
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-12-04T12:00:00,2018-12-18T07:00:00,90,Maintenance,Inactive,AET111152183#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-20T17:00:00,2017-12-21T13:00:00,45,Maintenance,Inactive,AET111152120#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-11-19T00:00:00,2018-11-19T07:00:00,45,Maintenance,Inactive,AET111152180#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-19T13:00:00,2017-12-19T17:00:00,53,Maintenance,Inactive,AET111152117#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-11T18:00:00,2018-10-12T17:00:00,45,Maintenance,Inactive,AET111152172#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-13T17:00:00,2017-12-14T13:00:00,45,Maintenance,Inactive,AET111152114#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-05T13:00:00,2017-12-05T17:00:00,68,Maintenance,Inactive,AET11115217#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-08T14:00:00,2018-10-09T07:00:00,59,Maintenance,Inactive,AET111152167#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-12T13:00:00,2017-12-12T17:00:00,68,Maintenance,Inactive,AET111152111#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-11-29T13:00:00,2017-11-29T17:00:00,90,Maintenance,Inactive,AET11115215#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-17T00:00:00,2018-04-17T07:00:00,45,Maintenance,Inactive,AET111152142#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-04T07:00:00,2018-04-04T12:00:00,210,Maintenance,Inactive,AET111152138#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-04-29T17:00:00,2019-04-30T00:00:00,45,Maintenance,Inactive,AET111152195#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-03-20T07:00:00,2018-03-20T12:00:00,75,Maintenance,Inactive,AET111152134#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-02-20T12:00:00,2018-03-06T07:00:00,68,Maintenance,Inactive,AET111152131#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-25T17:00:00,2019-03-31T22:00:00,113,Maintenance,Inactive,AET111152190#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-02-06T07:00:00,2018-02-06T12:00:00,75,Maintenance,Inactive,AET111152128#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-11T17:00:00,2019-01-21T07:00:00,113,Maintenance,Inactive,AET111152188#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-12T17:00:00,2018-01-22T07:00:00,68,Maintenance,Inactive,AET111152125#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-12-18T12:00:00,2019-01-02T07:00:00,90,Maintenance,Inactive,AET111152185#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-21T17:00:00,2018-01-02T00:00:00,45,Maintenance,Inactive,AET111152122#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-12-04T07:00:00,2018-12-04T12:00:00,97,Maintenance,Inactive,AET111152182#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-20T13:00:00,2017-12-20T17:00:00,90,Maintenance,Inactive,AET111152119#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-05T17:00:00,2017-12-06T13:00:00,45,Maintenance,Inactive,AET11115218#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-14T17:00:00,2017-12-19T13:00:00,45,Maintenance,Inactive,AET111152116#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-10T12:00:00,2018-10-11T18:00:00,59,Maintenance,Inactive,AET111152171#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-13T13:00:00,2017-12-13T17:00:00,90,Maintenance,Inactive,AET111152113#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-09T12:00:00,2018-10-10T07:00:00,59,Maintenance,Inactive,AET111152169#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-08T07:00:00,2018-10-08T14:00:00,45,Maintenance,Inactive,AET111152166#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2020-03-30T22:00:00,2020-04-03T17:00:00,135,Maintenance,Inactive,AET1111521104#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-17T12:00:00,2018-04-30T17:00:00,45,Maintenance,Inactive,AET111152144#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-06T17:00:00,2018-04-17T00:00:00,68,Maintenance,Inactive,AET111152141#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-01T22:00:00,2018-04-04T07:00:00,203,Maintenance,Inactive,AET111152137#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-04-05T17:00:00,2019-04-29T17:00:00,90,Maintenance,Inactive,AET111152194#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-03-06T12:00:00,2018-03-20T07:00:00,68,Maintenance,Inactive,AET111152133#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-02-20T07:00:00,2018-02-20T12:00:00,75,Maintenance,Inactive,AET111152130#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-06T13:00:00,2017-12-06T17:00:00,52,Maintenance,Inactive,AET11115219#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-26T17:00:00,2018-02-06T07:00:00,68,Maintenance,Inactive,AET111152127#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-07T07:00:00,2019-01-11T17:00:00,120,Maintenance,Inactive,AET111152187#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-08T07:00:00,2018-01-12T17:00:00,75,Maintenance,Inactive,AET111152124#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-12-18T07:00:00,2018-12-18T12:00:00,97,Maintenance,Inactive,AET111152184#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-21T13:00:00,2017-12-21T17:00:00,52,Maintenance,Inactive,AET111152121#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-22T07:00:00,2018-10-26T17:00:00,45,Maintenance,Inactive,AET111152174#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-11-19T07:00:00,2018-12-04T07:00:00,90,Maintenance,Inactive,AET111152181#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-19T17:00:00,2017-12-20T13:00:00,45,Maintenance,Inactive,AET111152118#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-14T13:00:00,2017-12-14T17:00:00,68,Maintenance,Inactive,AET111152115#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-10T07:00:00,2018-10-10T12:00:00,66,Maintenance,Inactive,AET111152170#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-12T17:00:00,2017-12-13T13:00:00,45,Maintenance,Inactive,AET111152112#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-10-09T07:00:00,2018-10-09T12:00:00,66,Maintenance,Inactive,AET111152168#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-11-29T17:00:00,2017-12-05T13:00:00,45,Maintenance,Inactive,AET11115216#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2017-12-06T17:00:00,2017-12-12T13:00:00,45,Maintenance,Inactive,AET111152110#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-17T07:00:00,2018-04-17T12:00:00,52,Maintenance,Inactive,AET111152143#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-04-04T12:00:00,2018-04-06T17:00:00,203,Maintenance,Inactive,AET111152139#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-10-07T14:00:00,2019-10-10T18:00:00,14,Maintenance,Inactive,AET111152199#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-03-20T12:00:00,2018-04-01T22:00:00,68,Maintenance,Inactive,AET111152135#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-03-31T22:00:00,2019-04-05T17:00:00,248,Maintenance,Inactive,AET111152192#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-03-06T07:00:00,2018-03-06T12:00:00,75,Maintenance,Inactive,AET111152132#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-22T07:00:00,2018-01-26T17:00:00,75,Maintenance,Inactive,AET111152126#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-02-06T12:00:00,2018-02-20T07:00:00,68,Maintenance,Inactive,AET111152129#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-21T07:00:00,2019-01-25T17:00:00,120,Maintenance,Inactive,AET111152189#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2019-01-02T07:00:00,2019-01-07T07:00:00,113,Maintenance,Inactive,AET111152186#2553,2017-11-25T11:50:08
+Planned,AET,AET Leventina,AET Leventina,Water Reservoir,SwissGrid,2018-01-02T00:00:00,2018-01-08T07:00:00,68,Maintenance,Inactive,AET111152123#2553,2017-11-25T11:50:08
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-27T11:00:00,2017-11-27T12:00:00,70,Other,Inactive,2017385352#923,2017-11-26T19:49:38
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-27T14:00:00,2017-11-27T15:00:00,70,Other,Inactive,2017385353#922,2017-11-26T19:49:09
+Unscheduled,VWK,HKW West,HKW West Block 2,Hard Coal,Tennet (DE),2017-11-26T18:30:00,2017-11-26T20:00:00,45,Outage,Active,evo_81#1353,2017-11-26T18:43:05
+Unscheduled,EnBW,Rheinhafen-Dampfkraftwerk Karlsruhe,RDK 8,Hard Coal,TransnetBW,2017-11-22T13:00:00,2017-11-26T17:45:00,842,Maintenance,Active,22244913#1117,2017-11-26T17:37:19
+Planned,EnBW,HKW Heilbronn,HKW Heilbronn Block 7,Hard Coal,TransnetBW,2017-11-26T06:00:00,2017-11-26T17:15:00,778,Maintenance,Active,22244933#1110,2017-11-26T17:09:48
+Planned,Steag,KW Walsum,Walsum Block 9,Hard Coal,Amprion,2017-11-28T09:00:00,2017-11-28T14:00:00,80,Maintenance,Active,201704344#1262,2017-11-26T13:39:28
+Planned,Steag,KW Walsum,Walsum Block 10,Hard Coal,Amprion,2017-11-27T09:00:00,2017-11-27T14:00:00,105,Maintenance,Active,201704342#1994,2017-11-26T13:38:26
+Unscheduled,Uniper,Windpark Nordsee One,Nordsee One,Wind (Offshore),Tennet (DE),2017-11-26T08:15:00,2017-11-26T13:30:00,332,External Factors,Active,M12-036308#3325,2017-11-26T13:34:11
+Unscheduled,RWE,Niederaußem,Niederaußem G,Lignite,Amprion,2017-11-26T09:13:00,2017-11-26T12:55:00,310,Outage,Active,2017385455#944,2017-11-26T12:53:25
+Planned,EnBW,Schluchseewerk AG,Kraftwerk Waldshut,Pumped Storage,TransnetBW,2017-11-27T08:00:00,2017-11-27T16:00:00,22,Maintenance,Inactive,22244812#1306,2017-11-26T11:27:22
+Planned,EnBW,Schluchseewerk AG,Kraftwerk Witznau,Pumped Storage,TransnetBW,2017-11-27T08:00:00,2017-11-27T16:00:00,27.5,Maintenance,Inactive,22244815#1305,2017-11-26T11:27:00
+Planned,EnBW,Schluchseewerk AG,Kraftwerk Witznau,Pumped Storage,TransnetBW,2017-11-29T08:00:00,2017-11-29T16:00:00,27.5,Maintenance,Inactive,22244816#1305,2017-11-26T11:24:50
+Planned,EnBW,Schluchseewerk AG,Kraftwerk Waldshut,Pumped Storage,TransnetBW,2017-11-30T08:00:00,2017-11-30T16:00:00,22,Maintenance,Inactive,22244813#1306,2017-11-26T11:22:37
+Planned,EnBW,Schluchseewerk AG,Kraftwerk Häusern,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T16:00:00,15,Maintenance,Inactive,22244814#1304,2017-11-26T11:17:50
+Planned,Vattenfall GmbH,HKW Mitte,HKW Mitte GUD,Gas,50Hertz,2017-11-27T01:00:00,2017-11-27T05:00:00,171,Other,Inactive,1031921#673,2017-11-26T10:07:17
+Planned,Vattenfall GmbH,HKW Mitte,HKW Mitte GUD,Gas,50Hertz,2017-11-27T19:00:00,2017-11-28T00:00:00,230,Other,Active,1031953#673,2017-11-26T10:06:41
+Planned,TRIANEL,KW Hamm-Uentrop,KW Hamm-Uentrop Block 10,Gas,Amprion,2017-11-25T06:00:00,2017-11-26T00:00:00,425,Other,Active,1101200112017#1214,2017-11-26T10:01:05
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-27T05:30:00,2017-11-27T10:00:00,11,Outage,Active,385458#923,2017-11-26T09:28:24
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-27T16:15:00,2017-11-28T00:00:00,22,Outage,Active,385457#922,2017-11-26T09:24:10
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-27T00:00:00,2017-11-27T13:00:00,24,Outage,Active,385456#922,2017-11-26T09:20:54
+Planned,RWE,Niederaußem,Niederaußem G,Lignite,Amprion,2017-11-26T04:00:00,2017-11-26T09:13:00,200,Outage,Active,2017385311#944,2017-11-26T09:15:14
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-11-26T13:00:00,2017-11-26T21:15:00,104,Maintenance,Active,1034844#3196,2017-11-26T06:33:16
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-11-25T09:00:00,2017-11-26T07:00:00,104,Maintenance,Active,1034823#3196,2017-11-26T06:33:12
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-26T04:50:00,2017-11-27T13:00:00,165,Outage,Active,2017385446#938,2017-11-26T04:57:58
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-26T04:50:00,2017-11-27T13:00:00,270,Outage,Active,2017385445#938,2017-11-26T04:55:46
+Unscheduled,RWE,Weisweiler,Weisweiler VGT - BI. H,Gas,Amprion,2017-11-22T09:09:00,2017-11-30T00:00:00,200,Maintenance,Active,2017385075#945,2017-11-26T00:10:22
+Unscheduled,RWE,Weisweiler,Weisweiler VGT - BI. G,Gas,Amprion,2017-11-22T09:09:00,2017-11-30T00:00:00,200,Maintenance,Active,2017385074#913,2017-11-26T00:09:59
+Planned,RWE,Neurath,Neurath A,Lignite,Amprion,2017-11-25T23:53:00,2017-11-28T00:00:00,294,Outage,Active,2017385416#910,2017-11-25T23:55:07
+Planned,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block D,Hard Coal,50Hertz,2017-11-25T20:00:00,2017-11-25T23:00:00,100,Other,Inactive,1031912#705,2017-11-25T21:15:57
+Planned,RWE,Neurath,Neurath E,Lignite,Amprion,2017-11-25T21:01:00,2017-11-28T05:00:00,606,Outage,Active,2017385278#919,2017-11-25T21:05:19
+Unscheduled,RWE,Niederaußem,Niederaußem K (BoA 1),Lignite,Amprion,2017-11-25T18:55:00,2017-11-25T20:18:00,90,Outage,Active,2017385432#934,2017-11-25T20:19:29
+Unscheduled,RWE,Neurath,Neurath B,Lignite,Amprion,2017-11-25T12:50:00,2017-11-25T20:00:00,15,Other,Active,2017385420#931,2017-11-25T19:30:34
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack Block 2,Hard Coal,50Hertz,2017-11-25T19:00:00,2017-11-25T21:00:00,125,Other,Active,1031952#677,2017-11-25T18:55:41
+Unscheduled,Uniper,Schkopau,Schkopau B,Lignite,50Hertz,2017-11-19T22:30:00,2017-11-25T18:15:00,450,Outage,Active,M12-036152#597,2017-11-25T18:08:38
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack Block 2,Hard Coal,50Hertz,2017-11-22T00:00:00,2017-11-25T19:00:00,123,Maintenance,Active,1031855#677,2017-11-25T16:55:31
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block C,Lignite,50Hertz,2017-11-25T15:00:00,2017-11-25T16:00:00,113,Maintenance,Active,1034843#3200,2017-11-25T14:15:11
+Planned,RWE,Weisweiler,Weisweiler E,Lignite,Amprion,2017-11-25T10:45:00,2017-11-25T16:00:00,110,Other,Active,2017385189#951,2017-11-25T13:37:26
+Planned,DREWAG,GTHKW Nossener Bruecke,GTHKW Nossener Bruecke,Gas,50Hertz,2017-11-25T15:00:00,2017-11-26T20:00:00,25,Maintenance,Active,20171125P0116#1345,2017-11-25T13:24:10
+Planned,DREWAG,GTHKW Nossener Bruecke,GTHKW Nossener Bruecke,Gas,50Hertz,2017-11-25T15:00:00,2017-11-26T20:00:00,62,Maintenance,Active,20171125P0115#1345,2017-11-25T13:23:11
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block B,Lignite,50Hertz,2017-12-18T14:00:00,2017-12-25T14:00:00,134,Maintenance,Active,1034818#3209,2017-11-25T11:36:15
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block B,Lignite,50Hertz,2017-12-11T14:00:00,2017-12-18T14:00:00,134,Maintenance,Active,1034819#3209,2017-11-25T11:36:15
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block B,Lignite,50Hertz,2017-12-25T14:00:00,2018-01-01T00:00:00,134,Maintenance,Active,1034815#3209,2017-11-25T11:36:11
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block B,Lignite,50Hertz,2017-11-27T14:00:00,2017-12-04T14:00:00,134,Maintenance,Active,1034817#3209,2017-11-25T11:36:11
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block B,Lignite,50Hertz,2017-12-04T14:00:00,2017-12-11T14:00:00,134,Maintenance,Active,1034816#3209,2017-11-25T11:36:11
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-26T15:30:00,2017-11-26T19:30:00,11,Outage,Active,385409#923,2017-11-25T09:20:11
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-26T04:45:00,2017-11-26T11:45:00,11,Outage,Active,385408#923,2017-11-25T09:20:01
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-26T00:00:00,2017-11-27T00:00:00,26,Outage,Active,385404#922,2017-11-25T09:13:25
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block C,Lignite,50Hertz,2017-11-25T12:00:00,2017-11-25T14:00:00,314,Maintenance,Active,1034841#3200,2017-11-25T08:54:20
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block C,Lignite,50Hertz,2017-11-25T18:00:00,2017-11-25T19:00:00,132,Maintenance,Inactive,1034827#3200,2017-11-25T08:52:11
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block C,Lignite,50Hertz,2017-11-25T14:00:00,2017-11-25T15:00:00,151,Maintenance,Active,1034842#3200,2017-11-25T08:52:11
+Planned,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block D,Hard Coal,50Hertz,2017-11-26T10:00:00,2017-11-26T22:00:00,100,Other,Inactive,1031926#705,2017-11-25T08:38:59
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-11-25T08:48:00,2017-11-28T08:30:00,15,Outage,Active,2017385397#907,2017-11-25T08:35:00
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-11-24T08:12:00,2017-11-25T08:45:00,22,Outage,Active,2017385236#907,2017-11-25T08:34:45
+Planned,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block E,Hard Coal,50Hertz,2017-11-27T00:00:00,2017-11-28T00:00:00,282,Other,Active,1031937#689,2017-11-25T07:58:11
+Planned,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block E,Hard Coal,50Hertz,2017-11-26T00:00:00,2017-11-27T00:00:00,282,Maintenance,Active,1031925#689,2017-11-25T07:57:01
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block C,Lignite,50Hertz,2017-11-25T09:00:00,2017-11-25T12:00:00,304,Maintenance,Active,1034839#3200,2017-11-25T07:55:11
+Planned,Vattenfall GmbH,HKW Moorburg,HKW Moorburg Block A,Hard Coal,50Hertz,2017-11-25T04:45:00,2017-11-25T07:45:00,498,Maintenance,Active,1031935#696,2017-11-25T07:27:46
+Planned,Vattenfall GmbH,HKW Moorburg,HKW Moorburg Block A,Hard Coal,50Hertz,2017-11-25T07:45:00,2017-11-25T08:00:00,200,Maintenance,Active,1031936#696,2017-11-25T07:27:41
+Planned,EnBW,HKW Altbach/Deizisau,HKW Altbach/Deizisau 2,Hard Coal,TransnetBW,2017-11-25T07:30:00,2017-11-26T20:00:00,336,Maintenance,Active,22244932#1114,2017-11-25T06:15:22
+Unscheduled,RWE,Berrenrath,Fabrik Berrenrath,Lignite,Amprion,2017-11-25T05:30:00,2017-12-02T03:00:00,10,Other,Active,2017385398#960,2017-11-25T05:48:18
+Unscheduled,LEAG,KW Jänschwalde,KW Jänschwalde Block C,Lignite,50Hertz,2017-11-25T05:45:00,2017-11-25T09:00:00,304,Maintenance,Active,1034840#3200,2017-11-25T05:45:14
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block C,Lignite,50Hertz,2017-11-25T01:00:00,2017-11-25T05:45:00,281,Maintenance,Active,1034826#3200,2017-11-25T05:45:11
+Unscheduled,RWE,Niederaußem,Niederaußem F,Lignite,Amprion,2017-11-22T06:40:00,2017-11-25T05:45:00,11,Other,Active,2017385050#898,2017-11-25T05:36:57
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-11-25T05:46:00,2017-11-29T12:00:00,11,Other,Active,2017385395#907,2017-11-25T05:35:27
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-11-24T06:03:00,2017-11-25T05:45:00,15,Other,Active,2017385215#907,2017-11-25T05:35:12
+Unscheduled,RWE,Weisweiler,Weisweiler F,Lignite,Amprion,2017-11-25T05:00:00,2017-11-25T07:00:00,20,Outage,Inactive,2017385393#952,2017-11-25T05:17:05
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-11-27T05:00:00,2017-11-27T06:00:00,102,Maintenance,Active,1034838#3196,2017-11-25T05:14:11
+Unscheduled,RWE,Weisweiler,Weisweiler F,Lignite,Amprion,2017-11-25T04:00:00,2017-11-25T05:00:00,50,Outage,Active,2017385389#952,2017-11-25T05:02:34
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block B,Lignite,50Hertz,2017-11-25T00:00:00,2017-11-25T04:30:00,245,Maintenance,Active,1034821#3209,2017-11-25T04:28:11
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block B,Lignite,50Hertz,2017-11-25T04:30:00,2017-11-27T14:00:00,143,Maintenance,Active,1034820#3209,2017-11-25T04:28:11
+Planned,Vattenfall GmbH,HKW Moorburg,HKW Moorburg Block A,Hard Coal,50Hertz,2017-11-25T04:15:00,2017-11-25T04:45:00,400,Maintenance,Active,1031934#696,2017-11-25T04:15:28
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block A,Lignite,50Hertz,2017-11-25T04:00:00,2017-11-25T05:00:00,238,Maintenance,Inactive,1034834#3208,2017-11-25T02:22:15
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block A,Lignite,50Hertz,2017-11-25T03:00:00,2017-11-25T04:00:00,238,Maintenance,Active,1034833#3208,2017-11-25T02:22:11
+Planned,LEAG,KW Schwarze Pumpe,KW Schwarze Pumpe Block A,Lignite,50Hertz,2017-11-25T05:00:00,2017-11-25T06:00:00,132,Maintenance,Inactive,1034832#3208,2017-11-25T02:22:11
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-24T00:00:00,2017-11-25T00:00:00,21,Outage,Active,385146#922,2017-11-25T00:00:57
+Planned,Nuon,Pen Y Cymoedd,Pen Y Cymoedd,Wind (Onshore),National Grid,2017-11-29T08:00:00,2017-11-29T19:00:00,228,Maintenance,Active,1031956#3242,2017-11-26T10:11:45
+Planned,Nuon,Pen Y Cymoedd,Pen Y Cymoedd,Wind (Onshore),National Grid,2017-12-01T16:00:00,2017-12-01T17:00:00,228,Maintenance,Active,1031954#3242,2017-11-26T10:11:41
+Planned,Nuon,Pen Y Cymoedd,Pen Y Cymoedd,Wind (Onshore),National Grid,2017-11-27T08:00:00,2017-11-27T09:00:00,228,Maintenance,Active,1031955#3242,2017-11-26T10:11:41
+Planned,RWE,Amer,Amer 9,Hard Coal,TenneT (NL),2017-11-26T11:00:00,2017-11-26T14:00:00,120,Outage,Active,2017385350#2204,2017-11-26T14:00:01
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T15:00:00,2017-11-25T15:15:00,670,Maintenance,Active,M12-036299#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T15:45:00,2017-11-25T16:00:00,467.5,Other,Active,M12-036277#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T14:45:00,2017-11-25T15:00:00,702.5,Other,Active,M12-036274#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T14:00:00,2017-11-25T14:15:00,747.5,Other,Inactive,M12-036271#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T13:15:00,2017-11-25T13:30:00,765,Other,Active,M12-036268#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T12:30:00,2017-11-25T12:45:00,715,Other,Active,M12-036265#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T11:15:00,2017-11-25T11:30:00,745,Other,Active,M12-036262#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T16:15:00,2017-11-25T16:30:00,367.5,Maintenance,Active,M12-036304#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T12:00:00,2017-11-25T12:15:00,685,Maintenance,Active,M12-036287#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T15:30:00,2017-11-25T15:45:00,535,Other,Active,M12-036276#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T14:30:00,2017-11-25T14:45:00,735,Other,Active,M12-036273#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T13:45:00,2017-11-25T14:15:00,800,Other,Active,M12-036270#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T13:00:00,2017-11-25T13:15:00,747.5,Other,Active,M12-036267#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T12:15:00,2017-11-25T12:30:00,700,Other,Active,M12-036264#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T16:45:00,2017-11-25T17:00:00,302.4,Maintenance,Active,M12-036306#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T16:00:00,2017-11-25T16:15:00,400,Maintenance,Active,M12-036303#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T11:30:00,2017-11-25T11:45:00,720,Maintenance,Active,M12-036285#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T15:15:00,2017-11-25T15:30:00,602.5,Other,Active,M12-036275#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T14:15:00,2017-11-25T14:30:00,767.5,Other,Active,M12-036272#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T13:30:00,2017-11-25T13:45:00,782.5,Other,Active,M12-036269#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T12:45:00,2017-11-25T13:00:00,730,Other,Active,M12-036266#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T11:45:00,2017-11-25T12:00:00,695,Other,Active,M12-036263#2270,2017-11-25T11:00:45
+Planned,Uniper,Maasvlakte,Maasvlakte 3,Hard Coal,TenneT (NL),2017-11-25T16:30:00,2017-11-25T16:45:00,335,Maintenance,Active,M12-036305#2270,2017-11-25T11:00:45
+Unscheduled,RWE,Eemshaven ,Eemshaven B,Hard Coal,TenneT (NL),2017-11-25T04:30:00,2017-11-25T05:30:00,60,Outage,Active,2017385391#2214,2017-11-25T04:34:54

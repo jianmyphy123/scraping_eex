@@ -103,8 +103,8 @@ class CSVPipeline(object):
     """This pipeline saves items to corresponding csv files, divided by month"""
     csv_files = {}
     csv_writers = {}
-    header = ['type',  'pub_ts', 'status', 'unitname',     'fuel_type',
-              'begin', 'end',    'mw_cap', 'mw_available', 'comment']
+    header = ['type', 'company', 'facility', 'unit', 'fuel',
+              'control_area', 'begin_ts', 'end_ts', 'limitation', 'reason', 'status', 'event_id', 'last_update']
 
     def open_spider(self, spider):
         self.csv_files[spider] = {}
@@ -143,8 +143,8 @@ class PostgrePipeline(object):
     POSTGRE_CREDENTIALS variable.
     """
     pg_credentials = POSTGRE_CREDENTIALS
-    header = ['type', 'pub_ts', 'status', 'unitname', 'fuel_type',
-              'begin', 'end', 'mw_cap', 'mw_available', 'comment']
+    header = ['type', 'company', 'facility', 'unit', 'fuel',
+              'control_area', 'begin_ts', 'end_ts', 'limitation', 'reason', 'status', 'event_id', 'last_update']
 
     def __init__(self):
         self.connection = psycopg2.connect(database=self.pg_credentials["database"],
@@ -154,6 +154,7 @@ class PostgrePipeline(object):
         self.cur = self.connection.cursor()
         self.pending_items = []
         self.failed_items = []
+        self.event_ids = []
 
     def open_spider(self, spider):
         self.create_table(spider.table)
@@ -162,6 +163,7 @@ class PostgrePipeline(object):
         try:
             self.connection.commit()
             self.pending_items.clear()
+
         except psycopg2.DataError as e:
             self.connection.rollback()
             self.failed_items.extend(self.pending_items)
@@ -187,6 +189,11 @@ class PostgrePipeline(object):
         for item in self.failed_items:
             print(item)
 
+        for event_id in self.event_ids:
+            self.update_version_no(spider.table, event_id)
+
+        self.event_ids.clear()
+
     def process_item(self, item, spider):
 
         retries = 1
@@ -197,6 +204,7 @@ class PostgrePipeline(object):
         while retries < 3:
             try:
                 self.postgre_upsert(item, spider.table)
+
                 break
             except (psycopg2.DataError, psycopg2.IntegrityError) as e:
                 print ("ERROR: During save to postgre:", e.pgerror)
@@ -234,20 +242,38 @@ class PostgrePipeline(object):
         self.cur.execute("SELECT EXISTS(SELECT * FROM information_schema.tables WHERE table_name=%s)", (table_name,))
 
         if not (self.cur.fetchone()[0]):
+            # create_query = ('CREATE TABLE IF NOT EXISTS {0}('
+            #                 'id BIGSERIAL PRIMARY KEY,'
+            #                 'type VARCHAR(64),'
+            #                 'pub_ts TIMESTAMP WITH TIME ZONE,'
+            #                 'status VARCHAR(16),'
+            #                 'unitname VARCHAR(128),'
+            #                 'area VARCHAR(128),'
+            #                 'fuel_type VARCHAR(128),'
+            #                 'begin_ts TIMESTAMP WITH TIME ZONE,'
+            #                 'end_ts TIMESTAMP WITH TIME ZONE,'
+            #                 'mw_cap DOUBLE PRECISION,'
+            #                 'mw_available DOUBLE PRECISION,'
+            #                 'comment TEXT,'
+            #                 'last_availability BOOLEAN '
+            #                 ');'
+            #                 ).format(table_name.lower())
             create_query = ('CREATE TABLE IF NOT EXISTS {0}('
                             'id BIGSERIAL PRIMARY KEY,'
                             'type VARCHAR(64),'
-                            'pub_ts TIMESTAMP WITH TIME ZONE,'
+                            'company VARCHAR(64),'
+                            'facility VARCHAR(64),'
+                            'unit VARCHAR(128),'
+                            'fuel VARCHAR(128),'
+                            'control_area VARCHAR(128),'
+                            'begin_ts TIMESTAMP,'
+                            'end_ts TIMESTAMP,'
+                            'limitation DOUBLE PRECISION,'
+                            'reason TEXT,'
                             'status VARCHAR(16),'
-                            'unitname VARCHAR(128),'
-                            'area VARCHAR(128),'
-                            'fuel_type VARCHAR(128),'
-                            'begin_ts TIMESTAMP WITH TIME ZONE,'
-                            'end_ts TIMESTAMP WITH TIME ZONE,'
-                            'mw_cap DOUBLE PRECISION,'
-                            'mw_available DOUBLE PRECISION,'
-                            'comment TEXT,'
-                            'last_availability BOOLEAN '
+                            'event_id VARCHAR(128),'
+                            'last_update TIMESTAMP,'
+                            'version_no INTEGER DEFAULT 1 '
                             ');'
                             ).format(table_name.lower())
 
@@ -262,35 +288,112 @@ class PostgrePipeline(object):
 
         # item['table'] = table_name
 
-        insert_query = ("INSERT INTO {0} ("
-                        "type,"
-                        "pub_ts,"
-                        "status,"
-                        "unitname,"
-                        "area,"
-                        "fuel_type,"
-                        "begin_ts,"
-                        "end_ts,"
-                        "mw_cap,"
-                        "mw_available,"
-                        "comment"
-                        ") "
-                        "VALUES ("
-                        "%(type)s,"
-                        "%(pub_ts)s,"
-                        "%(status)s,"
-                        "%(unitname)s,"
-                        "%(area)s,"
-                        "%(fuel_type)s,"
-                        "%(begin)s,"
-                        "%(end)s,"
-                        "%(mw_cap)s,"
-                        "%(mw_available)s,"
-                        "%(comment)s);"
-                        ).format(table_name)
+        # insert_query = ("INSERT INTO {0} ("
+        #                 "type,"
+        #                 "pub_ts,"
+        #                 "status,"
+        #                 "unitname,"
+        #                 "area,"
+        #                 "fuel_type,"
+        #                 "begin_ts,"
+        #                 "end_ts,"
+        #                 "mw_cap,"
+        #                 "mw_available,"
+        #                 "comment"
+        #                 ") "
+        #                 "VALUES ("
+        #                 "%(type)s,"
+        #                 "%(pub_ts)s,"
+        #                 "%(status)s,"
+        #                 "%(unitname)s,"
+        #                 "%(area)s,"
+        #                 "%(fuel_type)s,"
+        #                 "%(begin)s,"
+        #                 "%(end)s,"
+        #                 "%(mw_cap)s,"
+        #                 "%(mw_available)s,"
+        #                 "%(comment)s);"
+        #                 ).format(table_name)
 
-        self.pending_items.append(item)
-        self.cur.execute(insert_query, item)
+        item_exists_query = ("select id from {0} "
+                                    "WHERE "
+                                    "event_id = "
+                                    "%(event_id)s "
+                                    "and begin_ts = "
+                                    "%(begin_ts)s "
+                                    "and end_ts = "
+                                    "%(end_ts)s "
+                                    "and last_update = "
+                                    "%(last_update)s "
+                                    ).format(table_name)
+        self.cur.execute(item_exists_query, {'event_id': item['event_id'], 'begin_ts': item['begin_ts'],
+                                             'end_ts': item['end_ts'], 'last_update': item['last_update']})
+        rows = self.cur.fetchall()
+
+        if len(rows) > 0:
+            pass
+        else:
+            insert_query = ("INSERT INTO {0} ("
+                            "type,"
+                            "company,"
+                            "facility,"
+                            "unit,"
+                            "fuel,"
+                            "control_area,"
+                            "begin_ts,"
+                            "end_ts,"
+                            "limitation,"
+                            "reason,"
+                            "status,"
+                            "event_id,"
+                            "last_update"
+                            ") "
+                            "VALUES ("
+                            "%(type)s,"
+                            "%(company)s,"
+                            "%(facility)s,"
+                            "%(unit)s,"
+                            "%(fuel)s,"
+                            "%(control_area)s,"
+                            "%(begin_ts)s,"
+                            "%(end_ts)s,"
+                            "%(limitation)s,"
+                            "%(reason)s,"
+                            "%(status)s,"
+                            "%(event_id)s,"
+                            "%(last_update)s);"
+                            ).format(table_name)
+
+            self.pending_items.append(item)
+            self.cur.execute(insert_query, item)
+
+            if item["event_id"] not in self.event_ids:
+                self.event_ids.append(item['event_id'])
+
+    def update_version_no(self, table_name, event_id):
+        events_query = ("select id from {0} "
+                        "where event_id="
+                        "%(event_id)s "
+                        "order by last_update;"
+                        ).format(table_name)
+        self.cur.execute(events_query, {'event_id': event_id})
+        rows = self.cur.fetchall()
+
+        version_no = 1
+        for row in rows:
+            id = row[0]
+            update_version_no_query = ("UPDATE {0} SET "
+                                        "version_no = "
+                                        "%(version_no)s "
+                                        "WHERE "
+                                        "id = "
+                                        "%(id)s"
+                                        ).format(table_name)
+            self.cur.execute(update_version_no_query, {'version_no': version_no, 'id': id})
+            version_no += 1
+
+        self.connection.commit()
+
 
     def update_latest(self, table_name):
         """Queries through the database to set the 'latest_availability' flag."""
