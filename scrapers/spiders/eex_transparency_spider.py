@@ -73,7 +73,10 @@ class EexTransparencySpider(scrapy.Spider):
         self.scraper = ScrapeJS()
         self.retrycount = 0
 
-        self.driver = webdriver.PhantomJS('./phantomjs')
+        # # mac
+        # self.driver = webdriver.PhantomJS('./phantomjs/mac/phantomjs')
+        # linux
+        self.driver = webdriver.PhantomJS('./phantomjs/linux/phantomjs')
 
         self.failed_urls = []
         self.countries = ['austria', 'belgium', 'switzerland', 'czech-republic', 'germany',
