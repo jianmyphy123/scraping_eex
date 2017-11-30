@@ -19,12 +19,12 @@ import psycopg2
 
 from scrapers.config import POSTGRE_CREDENTIALS
 
-
+# this class not used
 class ScrapersPipeline(object):
     def process_item(self, item, spider):
         return item
 
-
+# this class not used
 class RTEFranceFilePipeline(object):
 
     translate_dict = {
@@ -98,7 +98,7 @@ class RTEFranceFilePipeline(object):
                                                          format='%d/%m/%Y %H:%M')
                     return report_df
 
-
+# pipeline that export csv file
 class CSVPipeline(object):
     """This pipeline saves items to corresponding csv files, divided by month"""
     csv_files = {}
@@ -145,6 +145,7 @@ class PostgrePipeline(object):
     pg_credentials = POSTGRE_CREDENTIALS
     header = ['type', 'company', 'facility', 'unit', 'fuel',
               'control_area', 'begin_ts', 'end_ts', 'limitation', 'reason', 'status', 'event_id', 'last_update']
+    schema = 'covalis1'
 
     def __init__(self):
         self.connection = psycopg2.connect(database=self.pg_credentials["database"],
@@ -258,7 +259,7 @@ class PostgrePipeline(object):
             #                 'last_availability BOOLEAN '
             #                 ');'
             #                 ).format(table_name.lower())
-            create_query = ('CREATE TABLE IF NOT EXISTS {0}('
+            create_query = ('CREATE TABLE IF NOT EXISTS {0}.{1}('
                             'id BIGSERIAL PRIMARY KEY,'
                             'type VARCHAR(64),'
                             'company VARCHAR(64),'
@@ -275,7 +276,7 @@ class PostgrePipeline(object):
                             'last_update TIMESTAMP,'
                             'version_no INTEGER DEFAULT 1 '
                             ');'
-                            ).format(table_name.lower())
+                            ).format(self.schema, table_name.lower())
 
             self.cur.execute(create_query)
             self.connection.commit()
@@ -315,7 +316,7 @@ class PostgrePipeline(object):
         #                 "%(comment)s);"
         #                 ).format(table_name)
 
-        item_exists_query = ("select id from {0} "
+        item_exists_query = ("select id from {0}.{1} "
                                     "WHERE "
                                     "event_id = "
                                     "%(event_id)s "
@@ -325,7 +326,7 @@ class PostgrePipeline(object):
                                     "%(end_ts)s "
                                     "and last_update = "
                                     "%(last_update)s "
-                                    ).format(table_name)
+                                    ).format(self.schema, table_name)
         self.cur.execute(item_exists_query, {'event_id': item['event_id'], 'begin_ts': item['begin_ts'],
                                              'end_ts': item['end_ts'], 'last_update': item['last_update']})
         rows = self.cur.fetchall()
@@ -333,7 +334,7 @@ class PostgrePipeline(object):
         if len(rows) > 0:
             pass
         else:
-            insert_query = ("INSERT INTO {0} ("
+            insert_query = ("INSERT INTO {0}.{1} ("
                             "type,"
                             "company,"
                             "facility,"
@@ -362,7 +363,7 @@ class PostgrePipeline(object):
                             "%(status)s,"
                             "%(event_id)s,"
                             "%(last_update)s);"
-                            ).format(table_name)
+                            ).format(self.schema, table_name)
 
             self.pending_items.append(item)
             self.cur.execute(insert_query, item)
@@ -371,24 +372,24 @@ class PostgrePipeline(object):
                 self.event_ids.append(item['event_id'])
 
     def update_version_no(self, table_name, event_id):
-        events_query = ("select id from {0} "
+        events_query = ("select id from {0}.{1} "
                         "where event_id="
                         "%(event_id)s "
                         "order by last_update;"
-                        ).format(table_name)
+                        ).format(self.schema, table_name)
         self.cur.execute(events_query, {'event_id': event_id})
         rows = self.cur.fetchall()
 
         version_no = 1
         for row in rows:
             id = row[0]
-            update_version_no_query = ("UPDATE {0} SET "
+            update_version_no_query = ("UPDATE {0}.{1} SET "
                                         "version_no = "
                                         "%(version_no)s "
                                         "WHERE "
                                         "id = "
                                         "%(id)s"
-                                        ).format(table_name)
+                                        ).format(self.schema, table_name)
             self.cur.execute(update_version_no_query, {'version_no': version_no, 'id': id})
             version_no += 1
 
