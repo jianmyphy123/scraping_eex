@@ -101,11 +101,15 @@ class RTEFranceFilePipeline(object):
 # pipeline that export csv file
 class CSVPipeline(object):
     """This pipeline saves items to corresponding csv files, divided by month"""
+
+    # csv file buffers
     csv_files = {}
+    # csv file writers to save by row
     csv_writers = {}
     header = ['type', 'company', 'facility', 'unit', 'fuel',
               'control_area', 'begin_ts', 'end_ts', 'limitation', 'reason', 'status', 'event_id', 'last_update']
 
+    # initialize
     def open_spider(self, spider):
         self.csv_files[spider] = {}
         self.csv_writers[spider] = {}
@@ -118,6 +122,9 @@ class CSVPipeline(object):
                 print("Exception on closing file:")
                 print(e)
 
+    # the part of processing item
+    # spider.scrape_dir: csv
+    # spider.name      : eex_availability
     def process_item(self, item, spider):
         filename = os.path.join(spider.scrape_dir,
                                 ''.join([spider.name, item['parse_date'].strftime('%Y-%m'), '.csv']))
@@ -135,7 +142,7 @@ class CSVPipeline(object):
 
         return item
 
-
+# save item to Postgre
 class PostgrePipeline(object):
     """This pipeline saves data to PostgreSQL database.
 
@@ -147,6 +154,7 @@ class PostgrePipeline(object):
               'control_area', 'begin_ts', 'end_ts', 'limitation', 'reason', 'status', 'event_id', 'last_update']
     schema = 'covalis1'
 
+    # connect to Postgre
     def __init__(self):
         self.connection = psycopg2.connect(database=self.pg_credentials["database"],
                                            user=self.pg_credentials["user"],
@@ -157,6 +165,7 @@ class PostgrePipeline(object):
         self.failed_items = []
         self.event_ids = []
 
+    # create table to save data
     def open_spider(self, spider):
         self.create_table(spider.table)
 
@@ -190,36 +199,31 @@ class PostgrePipeline(object):
         for item in self.failed_items:
             print(item)
 
+
+        # update version number
         for event_id in self.event_ids:
             self.update_version_no(spider.table, event_id)
 
         self.event_ids.clear()
 
+    # save item to Postgre
     def process_item(self, item, spider):
 
-        retries = 1
+        try:
+            self.postgre_upsert(item, spider.table)
 
-        for field in self.header:
-            if field not in item:
-                item['field']=None
-        while retries < 3:
-            try:
-                self.postgre_upsert(item, spider.table)
-
-                break
-            except (psycopg2.DataError, psycopg2.IntegrityError) as e:
-                print ("ERROR: During save to postgre:", e.pgerror)
-                self.connection.rollback()
-                self.failed_items.extend(self.pending_items)
-                self.pending_items.clear()
-                break
-            except psycopg2.DatabaseError:
-                self.connection = psycopg2.connect(database=self.pg_credentials["database"],
-                                                   user=self.pg_credentials["user"],
-                                                   host=self.pg_credentials["host"],
-                                                   password=self.pg_credentials["password"])
-                self.cur = self.connection.cursor()
-                self.postgre_upsert(item, spider.table)
+        except (psycopg2.DataError, psycopg2.IntegrityError) as e:
+            print ("ERROR: During save to postgre:", e.pgerror)
+            self.connection.rollback()
+            self.failed_items.extend(self.pending_items)
+            self.pending_items.clear()
+        except psycopg2.DatabaseError:
+            self.connection = psycopg2.connect(database=self.pg_credentials["database"],
+                                               user=self.pg_credentials["user"],
+                                               host=self.pg_credentials["host"],
+                                               password=self.pg_credentials["password"])
+            self.cur = self.connection.cursor()
+            self.postgre_upsert(item, spider.table)
 
         if len(self.pending_items) > 10:
             try:
@@ -316,6 +320,7 @@ class PostgrePipeline(object):
         #                 "%(comment)s);"
         #                 ).format(table_name)
 
+        # check if duplicated item exists
         item_exists_query = ("select id from {0}.{1} "
                                     "WHERE "
                                     "event_id = "
@@ -396,6 +401,7 @@ class PostgrePipeline(object):
         self.connection.commit()
 
 
+    # this function not used
     def update_latest(self, table_name):
         """Queries through the database to set the 'latest_availability' flag."""
 
