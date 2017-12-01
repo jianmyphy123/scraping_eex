@@ -86,20 +86,29 @@ class EexTransparencySpider(scrapy.Spider):
             try:
                 with open(scrape_log, mode='r') as log_file:
                     self.scrape_info = json.load(log_file)
+                    if 'scraping_times' not in self.scrape_info.keys():
+                        self.scrape_info['scraping_times'] = []
             except OSError as e:
                 if e.errno == 2:
                     print("Log file does not exist and will be created.")
                     self.scrape_info = {
                         'loaded_dates': [],
-                        'skipped_dates': []
+                        'skipped_dates': [],
+                        'scraping_times': []
                     }
                 else:
                     raise e
         else:
             self.scrape_info = {
                 'loaded_dates': [],
-                'skipped_dates': []
+                'skipped_dates': [],
+                'scraping_times': []
             }
+
+
+        self.scrape_info['scraping_times'].append(datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"))
+        with open(self.scrape_log, mode='w+') as log_file:
+            json.dump(self.scrape_info, log_file, indent=4)
 
     def start_requests(self):
         yield scrapy.Request('https://www.eex-transparency.com/', callback=self.start_requests_selenium)

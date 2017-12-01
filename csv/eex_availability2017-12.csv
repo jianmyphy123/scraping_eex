@@ -1,0 +1,272 @@
+type,company,facility,unit,fuel,control_area,begin_ts,end_ts,limitation,reason,status,event_id,last_update
+Unscheduled Limitation,VERBUND,Schlegeis,Schlegeis,,APG,2017-11-28T07:01:00,2017-12-04T02:40:05,66,Maintenance,Active,X192786#2506,2017-12-01T02:40:11
+Unscheduled Limitation,VERBUND,Zillergründl,Zillergründl,,APG,2017-11-30T17:05:00,2017-12-04T02:40:05,180,Outage,Active,X192918#2514,2017-12-01T02:40:11
+Unscheduled Limitation,VERBUND,Zillergründl,Zillergründl,,APG,2017-11-30T17:05:00,2017-11-30T21:05:00,180,Maintenance,Inactive,X192919#2514,2017-11-30T21:10:11
+Unscheduled Limitation,VERBUND,HORAMU,HORAMU,,APG,2017-11-28T08:04:00,2017-12-03T17:00:00,215,Maintenance,Inactive,X192789#2482,2017-11-30T17:10:09
+Planned Limitation,VERBUND,HORAMU,HORAMU,,APG,2017-11-28T08:00:00,2017-11-30T16:00:00,215,Maintenance,Inactive,X192608#2482,2017-11-30T16:00:04
+Unscheduled Limitation,VERBUND,Moserboden,Moserboden,,APG,2017-11-30T10:19:21,2017-11-30T14:19:21,65,Maintenance,Inactive,X192901#2492,2017-11-30T14:20:12
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,43,Maintenance,Active,22244996#2404,2017-11-30T12:57:17
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,43,Maintenance,Active,22244995#2404,2017-11-30T12:57:15
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,46,Maintenance,Active,22244994#2404,2017-11-30T12:57:14
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,46,Maintenance,Active,22244993#2404,2017-11-30T12:57:13
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,46,Maintenance,Active,22244992#2404,2017-11-30T12:57:11
+Unscheduled Limitation,VERBUND,Moserboden,Moserboden,,APG,2017-11-30T10:19:21,2017-12-03T11:30:00,65,Outage,Inactive,X192900#2492,2017-11-30T11:40:07
+Unscheduled Limitation,EnBW,Vorarlberger Illwerke AG,Staubecken Latschau,,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,41,Outage,Active,22244984#2405,2017-11-30T00:37:12
+Unscheduled,RWE,Inesco,Inesco 1,Gas,Elia,2017-11-23T09:44:00,2017-12-20T00:00:00,16,Other,Active,2017385150#2220,2017-11-30T12:39:13
+Unscheduled,RWE,Inesco,Inesco 1,Gas,Elia,2017-11-29T03:45:00,2017-11-29T12:00:00,49,Outage,Active,2017385713#2220,2017-11-30T12:38:18
+Unscheduled,Axpo,KLL - KW Linth-Limmern AG,Tierfehd - Limmern G3,Pumped Storage,SwissGrid,2017-11-30T02:38:00,2017-11-30T10:00:00,87,Outage,Active,#4948#2998,2017-11-30T09:48:59
+Unscheduled,Axpo,KLL - KW Linth-Limmern AG,Limmern - Muttsee G3,Pumped Storage,SwissGrid,2017-11-30T01:55:00,2017-11-30T05:55:00,250,Outage,Active,#4945#2994,2017-11-30T01:56:18
+Unscheduled,RWE,Neurath,Neurath E,Lignite,Amprion,2017-12-01T02:45:00,2017-12-01T04:00:00,50,Outage,Active,2017385951#919,2017-12-01T02:45:57
+Unscheduled,RWE,Neurath,Neurath B,Lignite,Amprion,2017-12-01T02:45:00,2017-12-01T05:00:00,15,Outage,Active,2017385950#931,2017-12-01T02:45:05
+Unscheduled,RWE,Neurath,Neurath C,Lignite,Amprion,2017-12-01T02:30:00,2017-12-01T05:00:00,20,Other,Active,2017385949#959,2017-12-01T02:37:44
+Unscheduled,RWE,Neurath,Neurath D,Lignite,Amprion,2017-12-01T02:37:00,2017-12-01T04:00:00,100,Outage,Active,2017385948#897,2017-12-01T02:37:38
+Planned,RWE,Neurath,Neurath D,Lignite,Amprion,2017-12-01T01:05:00,2017-12-01T02:37:00,35,Outage,Active,2017385946#897,2017-12-01T02:36:04
+Unscheduled,Steag,KW Herne,Herne Block 4,Hard Coal,Amprion,2017-12-01T02:15:00,2017-12-02T00:00:00,30,Outage,Active,201704418#1254,2017-12-01T02:23:00
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block B,Lignite,50Hertz,2017-12-01T00:30:00,2017-12-01T02:45:00,137,Maintenance,Active,1034874#3199,2017-12-01T01:34:15
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block B,Lignite,50Hertz,2017-12-01T02:45:00,2017-12-01T08:00:00,144,Maintenance,Active,1034875#3199,2017-12-01T01:34:11
+Planned,RWE,Neurath,Neurath D,Lignite,Amprion,2017-11-30T22:50:00,2017-12-01T01:05:00,15,Outage,Active,2017385942#897,2017-12-01T01:05:49
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T01:00:00,2017-12-01T00:00:00,12,Outage,Active,385758#923,2017-12-01T00:09:04
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-30T00:00:00,2017-12-01T00:00:00,19,Outage,Active,385754#922,2017-12-01T00:08:34
+Planned,RWE,GuD Dormagen,GuD Dormagen,Gas,Amprion,2017-11-30T23:57:00,2017-12-01T09:00:00,20,Other,Active,2017385940#902,2017-11-30T23:58:47
+Unscheduled,RWE,GuD Dormagen,GuD Dormagen,Gas,Amprion,2017-11-30T20:40:00,2017-11-30T23:57:00,20,Other,Active,2017385925#902,2017-11-30T23:58:28
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-12-01T00:00:00,2018-01-01T00:00:00,12,Other,Inactive,2017364365#907,2017-11-30T23:54:39
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-30T21:00:00,2017-11-30T23:40:00,60,External Factors,Active,2017385798#922,2017-11-30T23:43:21
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-11-30T23:37:00,2017-12-02T05:00:00,15,Other,Active,2017385943#907,2017-11-30T23:25:09
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-11-27T16:11:00,2017-11-30T21:50:00,11,Other,Active,2017385568#907,2017-11-30T21:37:26
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-01T00:30:00,2017-12-01T06:00:00,103,Maintenance,Active,1034873#3196,2017-11-30T21:23:15
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-30T21:00:00,2017-12-01T07:00:00,20,External Factors,Active,2017385935#938,2017-11-30T21:23:11
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-11-30T12:15:00,2017-11-30T21:00:00,103,Maintenance,Active,1034867#3196,2017-11-30T21:14:11
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T21:00:00,2017-11-30T22:00:00,60,External Factors,Active,2017385799#923,2017-11-30T21:06:25
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-30T08:00:00,2017-12-01T07:00:00,20,External Factors,Active,2017385860#938,2017-11-30T20:58:04
+Planned,ENGIE DE,Kraftwerk Wilhelmshaven,DEWHV______1_____ ,Hard Coal,Tennet (DE),2017-11-30T09:30:00,2017-11-30T20:57:00,726,Other,Active,25c92e8660c1484#3099,2017-11-30T20:57:44
+Planned,RWE,Neurath,Neurath C,Lignite,Amprion,2017-11-30T16:00:00,2017-11-30T20:15:00,20,Outage,Active,2017385903#959,2017-11-30T20:14:59
+Unscheduled,RWE,Neurath,Neurath B,Lignite,Amprion,2017-11-30T16:20:00,2017-11-30T20:15:00,20,Outage,Active,2017385906#931,2017-11-30T20:14:45
+Unscheduled,RWE,Neurath,Neurath A,Lignite,Amprion,2017-11-30T16:20:00,2017-11-30T20:15:00,20,Outage,Active,2017385907#910,2017-11-30T20:13:59
+Unscheduled,EnBW,HKW Stuttgart-Münster,Stuttgart-Münster GT18,Oil,TransnetBW,2017-11-30T19:24:00,2017-12-04T00:00:00,15,Outage,Active,22245002#2423,2017-11-30T19:25:26
+Planned,Vattenfall GmbH,PSW Goldisthal,PSW Goldisthal PSS A,Pumped Storage,50Hertz,2017-12-01T08:00:00,2017-12-01T22:00:00,265,Maintenance,Active,1032034#693,2017-11-30T18:26:54
+Planned,Vattenfall GmbH,PSW Goldisthal,PSW Goldisthal PSS A,Pumped Storage,50Hertz,2017-11-30T09:00:00,2017-11-30T18:30:00,265,Maintenance,Active,1032009#693,2017-11-30T18:26:52
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-22T18:30:00,2017-12-30T23:00:00,663,Outage,Active,2017385918#922,2017-11-30T18:10:16
+Unscheduled,Steag,KW Fenne,Fenne MKV,Hard Coal,Amprion,2017-11-30T11:10:00,2017-11-30T17:44:00,179,Outage,Active,201704416#1265,2017-11-30T17:45:54
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T10:11:00,2017-12-31T12:00:00,1180,Other,Active,2017385914#942,2017-11-30T17:43:08
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T12:00:00,2017-12-31T23:59:00,1284,Other,Active,2017385915#942,2017-11-30T17:42:48
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T09:20:00,2017-12-31T10:00:00,910,Other,Inactive,2017385913#942,2017-11-30T17:41:53
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-01T14:00:00,2017-12-02T21:00:00,104,Maintenance,Active,1034852#3196,2017-11-30T17:23:11
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T09:02:00,2017-12-31T09:47:00,770,Other,Inactive,2017385912#942,2017-11-30T17:18:10
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-02T21:00:00,2017-12-04T05:00:00,103,Maintenance,Active,1034872#3196,2017-11-30T17:13:15
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T08:00:00,2017-12-31T08:45:00,512,Other,Active,2017385911#942,2017-11-30T17:11:19
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-09-04T12:00:00,2017-12-31T08:00:00,75,Other,Active,2017378210#942,2017-11-30T17:05:59
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-25T14:00:00,2017-12-31T08:00:00,430,External Factors,Active,2017383636#942,2017-11-30T17:02:38
+Planned,VERBUND,Kraftwerk Jochenstein DE,Jochenstein-DE,Run-of-River,Tennet (DE),2017-11-30T07:00:00,2017-11-30T17:00:00,28.9,Maintenance,Inactive,X192855YX192854DE#2664,2017-11-30T17:00:42
+Planned,VERBUND,Kraftwerk Jochenstein AT,Jochenstein-AT,Run-of-River,APG,2017-11-30T07:00:00,2017-11-30T17:00:00,28.9,Maintenance,Inactive,X192855YX192854#2662,2017-11-30T17:00:42
+Planned,RWE,GuD Dormagen,GuD Dormagen,Gas,Amprion,2017-11-30T13:00:00,2017-11-30T16:17:00,30,Other,Active,2017385889#902,2017-11-30T16:18:54
+Planned,RWE,Weisweiler,Weisweiler F,Lignite,Amprion,2017-12-02T02:00:00,2017-12-02T03:00:00,322,Other,Active,2017385902#952,2017-11-30T15:38:41
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-01T21:30:00,2017-12-01T22:30:00,60,Other,Active,2017385901#923,2017-11-30T15:31:20
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-01T21:30:00,2017-12-01T22:30:00,60,Other,Active,2017385900#922,2017-11-30T15:29:50
+Planned,RWE,Vianden,Vianden 1,Pumped Storage,Amprion,2017-11-30T13:00:00,2017-11-30T15:25:00,100,Other,Active,2017385662-15522#2277,2017-11-30T15:28:40
+Planned,LEAG,KW Boxberg,KW Boxberg Block P,Lignite,50Hertz,2017-12-03T01:00:00,2017-12-03T03:00:00,136,Maintenance,Active,1034871#3194,2017-11-30T15:08:41
+Planned,LEAG,KW Boxberg,KW Boxberg Block P,Lignite,50Hertz,2017-12-02T00:00:00,2017-12-03T01:00:00,288,Maintenance,Active,1034870#3194,2017-11-30T15:08:22
+Planned,LEAG,KW Boxberg,KW Boxberg Block P,Lignite,50Hertz,2017-12-01T23:00:00,2017-12-02T00:00:00,145,Maintenance,Active,1034869#3194,2017-11-30T15:08:11
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack GuD,Gas,50Hertz,2017-12-09T07:00:00,2017-12-09T14:00:00,127,Other,Active,1032032#694,2017-11-30T15:05:06
+Unscheduled,RWE,Berrenrath,Fabrik Berrenrath,Lignite,Amprion,2017-11-25T05:30:00,2017-11-30T13:00:00,10,Other,Active,2017385398#960,2017-11-30T14:54:08
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-01T05:30:00,2017-12-01T06:30:00,60,Other,Active,2017385893#923,2017-11-30T14:53:32
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-01T05:30:00,2017-12-01T06:30:00,60,Other,Active,2017385892#922,2017-11-30T14:52:36
+Planned,SW Düsseldorf,Kraftwerk Lausward,GTE2,Gas,Amprion,2017-11-28T10:00:00,2017-12-04T13:00:00,76,Maintenance,Active,TPE-Strom--3257#3182,2017-11-30T14:49:20
+Planned,RWE,Gundremmingen,Gundremmingen C,Nuclear,Amprion,2019-05-29T12:00:00,2019-05-30T04:00:00,1063,Other,Active,243247#963,2017-11-30T14:17:53
+Planned,RWE,Gundremmingen,Gundremmingen C,Nuclear,Amprion,2019-04-27T12:00:00,2019-05-29T12:00:00,1288,Maintenance,Active,243258#963,2017-11-30T14:16:28
+Planned,RWE,Emsland,Emsland A,Nuclear,Amprion,2019-05-11T20:00:00,2019-05-30T20:00:00,1336,Maintenance,Active,243263#929,2017-11-30T14:13:02
+Planned,RWE,Emsland,Emsland A,Nuclear,Amprion,2018-05-25T20:00:00,2018-06-12T08:00:00,1336,Maintenance,Active,2017375095#929,2017-11-30T14:10:12
+Planned,Statkraft,PSW Erzhausen,PSW Erzhausen,Pumped Storage,Tennet (DE),2017-12-01T08:00:00,2017-12-01T13:00:00,55,Other,Active,73630-TEM12#1221,2017-11-30T13:53:39
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-21T14:00:00,2017-12-25T14:00:00,420,External Factors,Active,2017383635#942,2017-11-30T13:34:34
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-11-28T14:00:00,2017-12-01T14:00:00,350,External Factors,Active,2017383627#942,2017-11-30T13:34:34
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-15T14:00:00,2017-12-18T14:00:00,400,External Factors,Active,2017383632#942,2017-11-30T13:33:50
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-11T14:00:00,2017-12-15T14:00:00,390,External Factors,Active,2017383631#942,2017-11-30T13:33:50
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-18T14:00:00,2017-12-21T14:00:00,410,External Factors,Active,2017383633#942,2017-11-30T13:33:50
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-04T14:00:00,2017-12-08T14:00:00,370,External Factors,Active,2017383629#942,2017-11-30T13:32:59
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-08T14:00:00,2017-12-11T14:00:00,380,External Factors,Active,2017383630#942,2017-11-30T13:32:59
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-01T14:00:00,2017-12-04T14:00:00,360,External Factors,Active,2017383628#942,2017-11-30T13:32:29
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M5,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22245001#2396,2017-11-30T12:57:24
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M4,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22245000#2395,2017-11-30T12:57:24
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M3,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22244999#2394,2017-11-30T12:57:20
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M2,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22244998#2393,2017-11-30T12:57:18
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M1,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22244997#1309,2017-11-30T12:57:18
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T11:13:00,2017-11-30T11:57:00,60,Other,Active,2017385886#923,2017-11-30T12:03:09
+Unscheduled,RWE,Weisweiler,Weisweiler VGT - BI. H,Gas,Amprion,2017-11-30T11:15:00,2017-11-30T11:57:00,200,Outage,Active,2017385885#945,2017-11-30T12:02:29
+Planned,VERBUND,KW Schaerding-Neuhaus DE,Schaerding-Neuhaus-DE,Run-of-River,Tennet (DE),2017-12-11T06:45:00,2017-12-15T16:00:00,11.6,Maintenance,Active,X192902DE#2681,2017-11-30T11:40:06
+Planned,VERBUND,KW Schaerding-Neuhaus AT,Schaerding-Neuhaus-AT,Run-of-River,APG,2017-12-11T06:45:00,2017-12-15T16:00:00,11.6,Maintenance,Active,X192902#2679,2017-11-30T11:40:06
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T08:00:00,2017-11-30T11:00:00,10,Other,Active,2017385867#923,2017-11-30T11:13:44
+Planned,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block E,Hard Coal,50Hertz,2017-11-30T10:15:00,2017-12-06T16:00:00,146,Maintenance,Active,1031776#689,2017-11-30T11:09:41
+Unscheduled,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block E,Hard Coal,50Hertz,2017-11-30T00:45:00,2017-11-30T10:15:00,137,Other,Active,1032011#689,2017-11-30T11:08:55
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block F,Lignite,50Hertz,2017-12-02T02:00:00,2017-12-03T23:00:00,262,Maintenance,Active,1034868#3203,2017-11-30T10:28:15
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block F,Lignite,50Hertz,2017-12-02T01:00:00,2017-12-02T02:00:00,296,Maintenance,Active,1034847#3203,2017-11-30T10:28:11
+Planned,SW München,"HKW Süd, Anlage GuD1",SWM HKW Süd GuD1 GT2,Gas,Tennet (DE),2017-12-09T08:00:00,2017-12-09T14:00:00,108,External Factors,Active,SWM55770262168#2911,2017-11-30T10:10:37
+Planned,SW München,"HKW Süd, Anlage GuD1",SWM HKW Süd GuD1 GT3,Gas,Tennet (DE),2017-12-09T08:00:00,2017-12-09T14:00:00,108,External Factors,Active,SWM55770281107#2912,2017-11-30T10:10:37
+Planned,SW München,"HKW Süd, Anlage GuD1",SWM HKW Süd GuD1 DT1,Gas,Tennet (DE),2017-12-09T08:00:00,2017-12-09T14:00:00,82,External Factors,Active,SWM55770310138#2910,2017-11-30T10:09:58
+Unscheduled,RWE,Niederaußem,Niederaußem D,Lignite,Amprion,2017-11-30T06:30:00,2017-11-30T09:45:00,25,Outage,Active,2017385853#932,2017-11-30T09:44:45
+Planned,Vattenfall GmbH,HKW Lichterfelde,HKW Lichterfelde Block 3,Gas,50Hertz,2017-10-01T00:00:00,2017-12-01T00:00:00,144,Other,Active,1030205#704,2017-11-30T09:33:09
+Planned,Vattenfall GmbH,HKW Lichterfelde,HKW Lichterfelde Block 3,Gas,50Hertz,2017-12-01T00:00:00,2018-04-30T00:00:00,144,Maintenance,Active,1031905#704,2017-11-30T09:24:41
+Planned,Uniper,Ingolstadt,Ingolstadt 3,Oil,Tennet (DE),2017-11-28T00:00:00,2017-11-30T12:00:00,386,External Factors,Active,M12-036078#595,2017-11-30T09:18:10
+Planned,Uniper,Ingolstadt,Ingolstadt 4,Oil,Tennet (DE),2017-11-28T00:00:00,2017-11-30T12:00:00,386,External Factors,Active,M12-036079#596,2017-11-30T09:18:06
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-30T05:10:00,2017-11-30T06:44:00,60,Other,Active,2017385796#922,2017-11-30T09:13:07
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T05:10:00,2017-11-30T06:44:00,60,Other,Active,2017385797#923,2017-11-30T09:12:47
+Planned,RWE,Neurath,Neurath F,Lignite,Amprion,2017-12-01T00:00:00,2017-12-02T00:00:00,11,Other,Active,385872#906,2017-11-30T08:31:57
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack GuD,Gas,50Hertz,2017-12-02T07:00:00,2017-12-02T15:00:00,127,Other,Active,1032013#694,2017-11-30T08:30:55
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack GuD,Gas,50Hertz,2017-12-02T07:00:00,2017-12-02T15:00:00,127,Maintenance,Inactive,1032012#694,2017-11-30T08:30:51
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack GuD,Gas,50Hertz,2017-12-02T07:00:00,2017-12-02T15:00:00,127,Other,Inactive,1031909#694,2017-11-30T08:29:56
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-01T05:45:00,2017-12-01T10:30:00,11,Outage,Active,385859#923,2017-11-30T07:52:47
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-01T00:00:00,2017-12-02T00:00:00,20,Outage,Active,385858#922,2017-11-30T07:47:23
+Unscheduled,RWE,Gersteinwerk,Gersteinwerk G,Gas,Amprion,2017-11-30T06:30:00,2017-11-30T07:31:00,355,Outage,Active,2017385852#936,2017-11-30T07:34:40
+Unscheduled,RWE,Gersteinwerk,Gersteinwerk K2,Hard Coal,Amprion,2017-11-20T03:18:00,2017-11-30T02:29:00,614,Outage,Active,2017384865#914,2017-11-30T07:12:29
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-11-30T01:15:00,2017-11-30T09:00:00,103,Maintenance,Active,1034866#3196,2017-11-30T06:45:11
+Unscheduled,RWE,GuD Dormagen,GuD Dormagen,Gas,Amprion,2017-11-29T23:14:00,2017-11-30T08:00:00,25,Other,Active,2017385837#902,2017-11-30T06:37:09
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-29T01:00:00,2017-11-30T06:00:00,15,External Factors,Active,2017385706#938,2017-11-30T06:01:31
+Planned,RWE,Niederaußem,Niederaußem D,Lignite,Amprion,2017-11-29T22:58:00,2017-11-30T04:54:00,301,Outage,Active,2017385817#932,2017-11-30T04:55:24
+Unscheduled,EnBW,Vorarlberger Illwerke AG,Rodund 1 M4,Pumped Storage,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,50,Outage,Active,22244988#2399,2017-11-30T00:37:19
+Unscheduled,EnBW,Vorarlberger Illwerke AG,Rodund 1 M3,Pumped Storage,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,50,Outage,Active,22244987#2398,2017-11-30T00:37:15
+Unscheduled,EnBW,Vorarlberger Illwerke AG,Rodund 1 M2,Pumped Storage,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,50,Outage,Active,22244986#2397,2017-11-30T00:37:15
+Unscheduled,EnBW,Vorarlberger Illwerke AG,Rodund 1 M1,Pumped Storage,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,50,Outage,Active,22244985#1308,2017-11-30T00:37:14
+Planned,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block E,Hard Coal,50Hertz,2017-11-29T21:30:00,2017-11-30T00:34:00,282,Other,Active,1032001#689,2017-11-30T00:34:51
+Unscheduled,RWE,Neurath,Neurath F,Lignite,Amprion,2017-11-29T16:20:00,2017-11-30T00:00:00,15,Other,Active,2017385805#906,2017-11-30T00:23:06
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-30T00:00:00,2017-11-30T06:00:00,25,External Factors,Active,2017385839#938,2017-11-30T00:08:33
+Unscheduled,Steag,KW Walsum,Walsum Block 9,Hard Coal,Amprion,2017-10-12T10:00:00,2017-12-21T00:00:00,30,External Factors,Active,201703824#1262,2017-11-30T00:05:28
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-29T00:00:00,2017-11-30T00:00:00,22,Outage,Active,385626#922,2017-11-30T00:03:13
+type,company,facility,unit,fuel,control_area,begin_ts,end_ts,limitation,reason,status,event_id,last_update
+Unscheduled Limitation,VERBUND,Schlegeis,Schlegeis,,APG,2017-11-28T07:01:00,2017-12-04T02:40:05,66,Maintenance,Active,X192786#2506,2017-12-01T02:40:11
+Unscheduled Limitation,VERBUND,Zillergründl,Zillergründl,,APG,2017-11-30T17:05:00,2017-12-04T02:40:05,180,Outage,Active,X192918#2514,2017-12-01T02:40:11
+Unscheduled Limitation,VERBUND,Zillergründl,Zillergründl,,APG,2017-11-30T17:05:00,2017-11-30T21:05:00,180,Maintenance,Inactive,X192919#2514,2017-11-30T21:10:11
+Unscheduled Limitation,VERBUND,HORAMU,HORAMU,,APG,2017-11-28T08:04:00,2017-12-03T17:00:00,215,Maintenance,Inactive,X192789#2482,2017-11-30T17:10:09
+Planned Limitation,VERBUND,HORAMU,HORAMU,,APG,2017-11-28T08:00:00,2017-11-30T16:00:00,215,Maintenance,Inactive,X192608#2482,2017-11-30T16:00:04
+Unscheduled Limitation,VERBUND,Moserboden,Moserboden,,APG,2017-11-30T10:19:21,2017-11-30T14:19:21,65,Maintenance,Inactive,X192901#2492,2017-11-30T14:20:12
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,43,Maintenance,Active,22244996#2404,2017-11-30T12:57:17
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,43,Maintenance,Active,22244995#2404,2017-11-30T12:57:15
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,46,Maintenance,Active,22244994#2404,2017-11-30T12:57:14
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,46,Maintenance,Active,22244993#2404,2017-11-30T12:57:13
+Planned Limitation,EnBW,Vorarlberger Illwerke AG,Lünersee,,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,46,Maintenance,Active,22244992#2404,2017-11-30T12:57:11
+Unscheduled Limitation,VERBUND,Moserboden,Moserboden,,APG,2017-11-30T10:19:21,2017-12-03T11:30:00,65,Outage,Inactive,X192900#2492,2017-11-30T11:40:07
+Unscheduled Limitation,EnBW,Vorarlberger Illwerke AG,Staubecken Latschau,,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,41,Outage,Active,22244984#2405,2017-11-30T00:37:12
+Unscheduled,RWE,Inesco,Inesco 1,Gas,Elia,2017-11-23T09:44:00,2017-12-20T00:00:00,16,Other,Active,2017385150#2220,2017-11-30T12:39:13
+Unscheduled,RWE,Inesco,Inesco 1,Gas,Elia,2017-11-29T03:45:00,2017-11-29T12:00:00,49,Outage,Active,2017385713#2220,2017-11-30T12:38:18
+Unscheduled,Axpo,KLL - KW Linth-Limmern AG,Tierfehd - Limmern G3,Pumped Storage,SwissGrid,2017-11-30T02:38:00,2017-11-30T10:00:00,87,Outage,Active,#4948#2998,2017-11-30T09:48:59
+Unscheduled,Axpo,KLL - KW Linth-Limmern AG,Limmern - Muttsee G3,Pumped Storage,SwissGrid,2017-11-30T01:55:00,2017-11-30T05:55:00,250,Outage,Active,#4945#2994,2017-11-30T01:56:18
+Unscheduled,RWE,Neurath,Neurath E,Lignite,Amprion,2017-12-01T02:45:00,2017-12-01T04:00:00,50,Outage,Active,2017385951#919,2017-12-01T02:45:57
+Unscheduled,RWE,Neurath,Neurath B,Lignite,Amprion,2017-12-01T02:45:00,2017-12-01T05:00:00,15,Outage,Active,2017385950#931,2017-12-01T02:45:05
+Unscheduled,RWE,Neurath,Neurath C,Lignite,Amprion,2017-12-01T02:30:00,2017-12-01T05:00:00,20,Other,Active,2017385949#959,2017-12-01T02:37:44
+Unscheduled,RWE,Neurath,Neurath D,Lignite,Amprion,2017-12-01T02:37:00,2017-12-01T04:00:00,100,Outage,Active,2017385948#897,2017-12-01T02:37:38
+Planned,RWE,Neurath,Neurath D,Lignite,Amprion,2017-12-01T01:05:00,2017-12-01T02:37:00,35,Outage,Active,2017385946#897,2017-12-01T02:36:04
+Unscheduled,Steag,KW Herne,Herne Block 4,Hard Coal,Amprion,2017-12-01T02:15:00,2017-12-02T00:00:00,30,Outage,Active,201704418#1254,2017-12-01T02:23:00
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block B,Lignite,50Hertz,2017-12-01T00:30:00,2017-12-01T02:45:00,137,Maintenance,Active,1034874#3199,2017-12-01T01:34:15
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block B,Lignite,50Hertz,2017-12-01T02:45:00,2017-12-01T08:00:00,144,Maintenance,Active,1034875#3199,2017-12-01T01:34:11
+Planned,RWE,Neurath,Neurath D,Lignite,Amprion,2017-11-30T22:50:00,2017-12-01T01:05:00,15,Outage,Active,2017385942#897,2017-12-01T01:05:49
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T01:00:00,2017-12-01T00:00:00,12,Outage,Active,385758#923,2017-12-01T00:09:04
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-30T00:00:00,2017-12-01T00:00:00,19,Outage,Active,385754#922,2017-12-01T00:08:34
+Planned,RWE,GuD Dormagen,GuD Dormagen,Gas,Amprion,2017-11-30T23:57:00,2017-12-01T09:00:00,20,Other,Active,2017385940#902,2017-11-30T23:58:47
+Unscheduled,RWE,GuD Dormagen,GuD Dormagen,Gas,Amprion,2017-11-30T20:40:00,2017-11-30T23:57:00,20,Other,Active,2017385925#902,2017-11-30T23:58:28
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-12-01T00:00:00,2018-01-01T00:00:00,12,Other,Inactive,2017364365#907,2017-11-30T23:54:39
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-30T21:00:00,2017-11-30T23:40:00,60,External Factors,Active,2017385798#922,2017-11-30T23:43:21
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-11-30T23:37:00,2017-12-02T05:00:00,15,Other,Active,2017385943#907,2017-11-30T23:25:09
+Planned,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-11-27T16:11:00,2017-11-30T21:50:00,11,Other,Active,2017385568#907,2017-11-30T21:37:26
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-01T00:30:00,2017-12-01T06:00:00,103,Maintenance,Active,1034873#3196,2017-11-30T21:23:15
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-30T21:00:00,2017-12-01T07:00:00,20,External Factors,Active,2017385935#938,2017-11-30T21:23:11
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-11-30T12:15:00,2017-11-30T21:00:00,103,Maintenance,Active,1034867#3196,2017-11-30T21:14:11
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T21:00:00,2017-11-30T22:00:00,60,External Factors,Active,2017385799#923,2017-11-30T21:06:25
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-30T08:00:00,2017-12-01T07:00:00,20,External Factors,Active,2017385860#938,2017-11-30T20:58:04
+Planned,ENGIE DE,Kraftwerk Wilhelmshaven,DEWHV______1_____ ,Hard Coal,Tennet (DE),2017-11-30T09:30:00,2017-11-30T20:57:00,726,Other,Active,25c92e8660c1484#3099,2017-11-30T20:57:44
+Planned,RWE,Neurath,Neurath C,Lignite,Amprion,2017-11-30T16:00:00,2017-11-30T20:15:00,20,Outage,Active,2017385903#959,2017-11-30T20:14:59
+Unscheduled,RWE,Neurath,Neurath B,Lignite,Amprion,2017-11-30T16:20:00,2017-11-30T20:15:00,20,Outage,Active,2017385906#931,2017-11-30T20:14:45
+Unscheduled,RWE,Neurath,Neurath A,Lignite,Amprion,2017-11-30T16:20:00,2017-11-30T20:15:00,20,Outage,Active,2017385907#910,2017-11-30T20:13:59
+Unscheduled,EnBW,HKW Stuttgart-Münster,Stuttgart-Münster GT18,Oil,TransnetBW,2017-11-30T19:24:00,2017-12-04T00:00:00,15,Outage,Active,22245002#2423,2017-11-30T19:25:26
+Planned,Vattenfall GmbH,PSW Goldisthal,PSW Goldisthal PSS A,Pumped Storage,50Hertz,2017-12-01T08:00:00,2017-12-01T22:00:00,265,Maintenance,Active,1032034#693,2017-11-30T18:26:54
+Planned,Vattenfall GmbH,PSW Goldisthal,PSW Goldisthal PSS A,Pumped Storage,50Hertz,2017-11-30T09:00:00,2017-11-30T18:30:00,265,Maintenance,Active,1032009#693,2017-11-30T18:26:52
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-22T18:30:00,2017-12-30T23:00:00,663,Outage,Active,2017385918#922,2017-11-30T18:10:16
+Unscheduled,Steag,KW Fenne,Fenne MKV,Hard Coal,Amprion,2017-11-30T11:10:00,2017-11-30T17:44:00,179,Outage,Active,201704416#1265,2017-11-30T17:45:54
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T10:11:00,2017-12-31T12:00:00,1180,Other,Active,2017385914#942,2017-11-30T17:43:08
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T12:00:00,2017-12-31T23:59:00,1284,Other,Active,2017385915#942,2017-11-30T17:42:48
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T09:20:00,2017-12-31T10:00:00,910,Other,Inactive,2017385913#942,2017-11-30T17:41:53
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-01T14:00:00,2017-12-02T21:00:00,104,Maintenance,Active,1034852#3196,2017-11-30T17:23:11
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T09:02:00,2017-12-31T09:47:00,770,Other,Inactive,2017385912#942,2017-11-30T17:18:10
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-02T21:00:00,2017-12-04T05:00:00,103,Maintenance,Active,1034872#3196,2017-11-30T17:13:15
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-31T08:00:00,2017-12-31T08:45:00,512,Other,Active,2017385911#942,2017-11-30T17:11:19
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-09-04T12:00:00,2017-12-31T08:00:00,75,Other,Active,2017378210#942,2017-11-30T17:05:59
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-25T14:00:00,2017-12-31T08:00:00,430,External Factors,Active,2017383636#942,2017-11-30T17:02:38
+Planned,VERBUND,Kraftwerk Jochenstein DE,Jochenstein-DE,Run-of-River,Tennet (DE),2017-11-30T07:00:00,2017-11-30T17:00:00,28.9,Maintenance,Inactive,X192855YX192854DE#2664,2017-11-30T17:00:42
+Planned,VERBUND,Kraftwerk Jochenstein AT,Jochenstein-AT,Run-of-River,APG,2017-11-30T07:00:00,2017-11-30T17:00:00,28.9,Maintenance,Inactive,X192855YX192854#2662,2017-11-30T17:00:42
+Planned,RWE,GuD Dormagen,GuD Dormagen,Gas,Amprion,2017-11-30T13:00:00,2017-11-30T16:17:00,30,Other,Active,2017385889#902,2017-11-30T16:18:54
+Planned,RWE,Weisweiler,Weisweiler F,Lignite,Amprion,2017-12-02T02:00:00,2017-12-02T03:00:00,322,Other,Active,2017385902#952,2017-11-30T15:38:41
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-01T21:30:00,2017-12-01T22:30:00,60,Other,Active,2017385901#923,2017-11-30T15:31:20
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-01T21:30:00,2017-12-01T22:30:00,60,Other,Active,2017385900#922,2017-11-30T15:29:50
+Planned,RWE,Vianden,Vianden 1,Pumped Storage,Amprion,2017-11-30T13:00:00,2017-11-30T15:25:00,100,Other,Active,2017385662-15522#2277,2017-11-30T15:28:40
+Planned,LEAG,KW Boxberg,KW Boxberg Block P,Lignite,50Hertz,2017-12-03T01:00:00,2017-12-03T03:00:00,136,Maintenance,Active,1034871#3194,2017-11-30T15:08:41
+Planned,LEAG,KW Boxberg,KW Boxberg Block P,Lignite,50Hertz,2017-12-02T00:00:00,2017-12-03T01:00:00,288,Maintenance,Active,1034870#3194,2017-11-30T15:08:22
+Planned,LEAG,KW Boxberg,KW Boxberg Block P,Lignite,50Hertz,2017-12-01T23:00:00,2017-12-02T00:00:00,145,Maintenance,Active,1034869#3194,2017-11-30T15:08:11
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack GuD,Gas,50Hertz,2017-12-09T07:00:00,2017-12-09T14:00:00,127,Other,Active,1032032#694,2017-11-30T15:05:06
+Unscheduled,RWE,Berrenrath,Fabrik Berrenrath,Lignite,Amprion,2017-11-25T05:30:00,2017-11-30T13:00:00,10,Other,Active,2017385398#960,2017-11-30T14:54:08
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-01T05:30:00,2017-12-01T06:30:00,60,Other,Active,2017385893#923,2017-11-30T14:53:32
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-01T05:30:00,2017-12-01T06:30:00,60,Other,Active,2017385892#922,2017-11-30T14:52:36
+Planned,SW Düsseldorf,Kraftwerk Lausward,GTE2,Gas,Amprion,2017-11-28T10:00:00,2017-12-04T13:00:00,76,Maintenance,Active,TPE-Strom--3257#3182,2017-11-30T14:49:20
+Planned,RWE,Gundremmingen,Gundremmingen C,Nuclear,Amprion,2019-05-29T12:00:00,2019-05-30T04:00:00,1063,Other,Active,243247#963,2017-11-30T14:17:53
+Planned,RWE,Gundremmingen,Gundremmingen C,Nuclear,Amprion,2019-04-27T12:00:00,2019-05-29T12:00:00,1288,Maintenance,Active,243258#963,2017-11-30T14:16:28
+Planned,RWE,Emsland,Emsland A,Nuclear,Amprion,2019-05-11T20:00:00,2019-05-30T20:00:00,1336,Maintenance,Active,243263#929,2017-11-30T14:13:02
+Planned,RWE,Emsland,Emsland A,Nuclear,Amprion,2018-05-25T20:00:00,2018-06-12T08:00:00,1336,Maintenance,Active,2017375095#929,2017-11-30T14:10:12
+Planned,Statkraft,PSW Erzhausen,PSW Erzhausen,Pumped Storage,Tennet (DE),2017-12-01T08:00:00,2017-12-01T13:00:00,55,Other,Active,73630-TEM12#1221,2017-11-30T13:53:39
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-21T14:00:00,2017-12-25T14:00:00,420,External Factors,Active,2017383635#942,2017-11-30T13:34:34
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-11-28T14:00:00,2017-12-01T14:00:00,350,External Factors,Active,2017383627#942,2017-11-30T13:34:34
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-15T14:00:00,2017-12-18T14:00:00,400,External Factors,Active,2017383632#942,2017-11-30T13:33:50
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-11T14:00:00,2017-12-15T14:00:00,390,External Factors,Active,2017383631#942,2017-11-30T13:33:50
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-18T14:00:00,2017-12-21T14:00:00,410,External Factors,Active,2017383633#942,2017-11-30T13:33:50
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-04T14:00:00,2017-12-08T14:00:00,370,External Factors,Active,2017383629#942,2017-11-30T13:32:59
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-08T14:00:00,2017-12-11T14:00:00,380,External Factors,Active,2017383630#942,2017-11-30T13:32:59
+Planned,RWE,Gundremmingen,Gundremmingen B,Nuclear,Amprion,2017-12-01T14:00:00,2017-12-04T14:00:00,360,External Factors,Active,2017383628#942,2017-11-30T13:32:29
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M5,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22245001#2396,2017-11-30T12:57:24
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M4,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22245000#2395,2017-11-30T12:57:24
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M3,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22244999#2394,2017-11-30T12:57:20
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M2,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22244998#2393,2017-11-30T12:57:18
+Planned,EnBW,Vorarlberger Illwerke AG,Lünerseewerk M1,Pumped Storage,TransnetBW,2017-12-05T08:00:00,2017-12-05T08:30:00,56,Maintenance,Active,22244997#1309,2017-11-30T12:57:18
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T11:13:00,2017-11-30T11:57:00,60,Other,Active,2017385886#923,2017-11-30T12:03:09
+Unscheduled,RWE,Weisweiler,Weisweiler VGT - BI. H,Gas,Amprion,2017-11-30T11:15:00,2017-11-30T11:57:00,200,Outage,Active,2017385885#945,2017-11-30T12:02:29
+Planned,VERBUND,KW Schaerding-Neuhaus DE,Schaerding-Neuhaus-DE,Run-of-River,Tennet (DE),2017-12-11T06:45:00,2017-12-15T16:00:00,11.6,Maintenance,Active,X192902DE#2681,2017-11-30T11:40:06
+Planned,VERBUND,KW Schaerding-Neuhaus AT,Schaerding-Neuhaus-AT,Run-of-River,APG,2017-12-11T06:45:00,2017-12-15T16:00:00,11.6,Maintenance,Active,X192902#2679,2017-11-30T11:40:06
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T08:00:00,2017-11-30T11:00:00,10,Other,Active,2017385867#923,2017-11-30T11:13:44
+Planned,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block E,Hard Coal,50Hertz,2017-11-30T10:15:00,2017-12-06T16:00:00,146,Maintenance,Active,1031776#689,2017-11-30T11:09:41
+Unscheduled,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block E,Hard Coal,50Hertz,2017-11-30T00:45:00,2017-11-30T10:15:00,137,Other,Active,1032011#689,2017-11-30T11:08:55
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block F,Lignite,50Hertz,2017-12-02T02:00:00,2017-12-03T23:00:00,262,Maintenance,Active,1034868#3203,2017-11-30T10:28:15
+Planned,LEAG,KW Jänschwalde,KW Jänschwalde Block F,Lignite,50Hertz,2017-12-02T01:00:00,2017-12-02T02:00:00,296,Maintenance,Active,1034847#3203,2017-11-30T10:28:11
+Planned,SW München,"HKW Süd, Anlage GuD1",SWM HKW Süd GuD1 GT2,Gas,Tennet (DE),2017-12-09T08:00:00,2017-12-09T14:00:00,108,External Factors,Active,SWM55770262168#2911,2017-11-30T10:10:37
+Planned,SW München,"HKW Süd, Anlage GuD1",SWM HKW Süd GuD1 GT3,Gas,Tennet (DE),2017-12-09T08:00:00,2017-12-09T14:00:00,108,External Factors,Active,SWM55770281107#2912,2017-11-30T10:10:37
+Planned,SW München,"HKW Süd, Anlage GuD1",SWM HKW Süd GuD1 DT1,Gas,Tennet (DE),2017-12-09T08:00:00,2017-12-09T14:00:00,82,External Factors,Active,SWM55770310138#2910,2017-11-30T10:09:58
+Unscheduled,RWE,Niederaußem,Niederaußem D,Lignite,Amprion,2017-11-30T06:30:00,2017-11-30T09:45:00,25,Outage,Active,2017385853#932,2017-11-30T09:44:45
+Planned,Vattenfall GmbH,HKW Lichterfelde,HKW Lichterfelde Block 3,Gas,50Hertz,2017-10-01T00:00:00,2017-12-01T00:00:00,144,Other,Active,1030205#704,2017-11-30T09:33:09
+Planned,Vattenfall GmbH,HKW Lichterfelde,HKW Lichterfelde Block 3,Gas,50Hertz,2017-12-01T00:00:00,2018-04-30T00:00:00,144,Maintenance,Active,1031905#704,2017-11-30T09:24:41
+Planned,Uniper,Ingolstadt,Ingolstadt 3,Oil,Tennet (DE),2017-11-28T00:00:00,2017-11-30T12:00:00,386,External Factors,Active,M12-036078#595,2017-11-30T09:18:10
+Planned,Uniper,Ingolstadt,Ingolstadt 4,Oil,Tennet (DE),2017-11-28T00:00:00,2017-11-30T12:00:00,386,External Factors,Active,M12-036079#596,2017-11-30T09:18:06
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-30T05:10:00,2017-11-30T06:44:00,60,Other,Active,2017385796#922,2017-11-30T09:13:07
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-11-30T05:10:00,2017-11-30T06:44:00,60,Other,Active,2017385797#923,2017-11-30T09:12:47
+Planned,RWE,Neurath,Neurath F,Lignite,Amprion,2017-12-01T00:00:00,2017-12-02T00:00:00,11,Other,Active,385872#906,2017-11-30T08:31:57
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack GuD,Gas,50Hertz,2017-12-02T07:00:00,2017-12-02T15:00:00,127,Other,Active,1032013#694,2017-11-30T08:30:55
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack GuD,Gas,50Hertz,2017-12-02T07:00:00,2017-12-02T15:00:00,127,Maintenance,Inactive,1032012#694,2017-11-30T08:30:51
+Planned,Vattenfall GmbH,HKW Tiefstack,HKW Tiefstack GuD,Gas,50Hertz,2017-12-02T07:00:00,2017-12-02T15:00:00,127,Other,Inactive,1031909#694,2017-11-30T08:29:56
+Planned,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-01T05:45:00,2017-12-01T10:30:00,11,Outage,Active,385859#923,2017-11-30T07:52:47
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-01T00:00:00,2017-12-02T00:00:00,20,Outage,Active,385858#922,2017-11-30T07:47:23
+Unscheduled,RWE,Gersteinwerk,Gersteinwerk G,Gas,Amprion,2017-11-30T06:30:00,2017-11-30T07:31:00,355,Outage,Active,2017385852#936,2017-11-30T07:34:40
+Unscheduled,RWE,Gersteinwerk,Gersteinwerk K2,Hard Coal,Amprion,2017-11-20T03:18:00,2017-11-30T02:29:00,614,Outage,Active,2017384865#914,2017-11-30T07:12:29
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-11-30T01:15:00,2017-11-30T09:00:00,103,Maintenance,Active,1034866#3196,2017-11-30T06:45:11
+Unscheduled,RWE,GuD Dormagen,GuD Dormagen,Gas,Amprion,2017-11-29T23:14:00,2017-11-30T08:00:00,25,Other,Active,2017385837#902,2017-11-30T06:37:09
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-29T01:00:00,2017-11-30T06:00:00,15,External Factors,Active,2017385706#938,2017-11-30T06:01:31
+Planned,RWE,Niederaußem,Niederaußem D,Lignite,Amprion,2017-11-29T22:58:00,2017-11-30T04:54:00,301,Outage,Active,2017385817#932,2017-11-30T04:55:24
+Unscheduled,EnBW,Vorarlberger Illwerke AG,Rodund 1 M4,Pumped Storage,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,50,Outage,Active,22244988#2399,2017-11-30T00:37:19
+Unscheduled,EnBW,Vorarlberger Illwerke AG,Rodund 1 M3,Pumped Storage,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,50,Outage,Active,22244987#2398,2017-11-30T00:37:15
+Unscheduled,EnBW,Vorarlberger Illwerke AG,Rodund 1 M2,Pumped Storage,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,50,Outage,Active,22244986#2397,2017-11-30T00:37:15
+Unscheduled,EnBW,Vorarlberger Illwerke AG,Rodund 1 M1,Pumped Storage,TransnetBW,2017-11-29T23:15:00,2017-11-30T00:30:00,50,Outage,Active,22244985#1308,2017-11-30T00:37:14
+Planned,Vattenfall GmbH,HKW Reuter West,HKW Reuter West Block E,Hard Coal,50Hertz,2017-11-29T21:30:00,2017-11-30T00:34:00,282,Other,Active,1032001#689,2017-11-30T00:34:51
+Unscheduled,RWE,Neurath,Neurath F,Lignite,Amprion,2017-11-29T16:20:00,2017-11-30T00:00:00,15,Other,Active,2017385805#906,2017-11-30T00:23:06
+Unscheduled,RWE,Emsland,Emsland D,Gas,Amprion,2017-11-30T00:00:00,2017-11-30T06:00:00,25,External Factors,Active,2017385839#938,2017-11-30T00:08:33
+Unscheduled,Steag,KW Walsum,Walsum Block 9,Hard Coal,Amprion,2017-10-12T10:00:00,2017-12-21T00:00:00,30,External Factors,Active,201703824#1262,2017-11-30T00:05:28
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-11-29T00:00:00,2017-11-30T00:00:00,22,Outage,Active,385626#922,2017-11-30T00:03:13
+Planned,Nuon,Pen Y Cymoedd,Pen Y Cymoedd,Wind (Onshore),National Grid,2017-12-01T16:00:00,2017-12-01T17:00:00,228,Maintenance,Inactive,1031954#3242,2017-11-30T17:30:51
+Unscheduled,RWE,Amer,Amer 9,Hard Coal,TenneT (NL),2017-11-30T16:45:00,2017-11-30T19:00:00,240,Outage,Active,2017385910#2204,2017-11-30T17:35:07
+Planned,RWE,Swentibold,Swentibold 1,Gas,TenneT (NL),2017-12-15T21:00:00,2017-12-16T17:00:00,167,Outage,Active,2017384564#2229,2017-11-30T15:16:49
+Unscheduled,RWE,Amer,Amer 9,Hard Coal,TenneT (NL),2017-11-30T10:43:00,2017-11-30T14:30:00,642,Outage,Active,2017385884#2204,2017-11-30T14:26:19
+Planned,RWE,Eemshaven ,Eemshaven B,Hard Coal,TenneT (NL),2017-11-30T10:00:00,2017-11-30T12:15:00,190,Outage,Active,2017385861#2214,2017-11-30T12:17:16
+Planned,RWE,Eemshaven ,Eemshaven B,Hard Coal,TenneT (NL),2017-11-30T07:00:00,2017-11-30T12:30:00,300,Outage,Active,2017385850#2214,2017-11-30T12:17:16
+Planned,RWE,Moerdijk,Moerdijk 1,Gas,TenneT (NL),2017-11-30T13:00:00,2017-11-30T18:00:00,28,Outage,Active,2017385840#2226,2017-11-30T11:08:51
+Unscheduled,RWE,Moerdijk,Moerdijk 1,Gas,TenneT (NL),2017-11-30T07:00:00,2017-11-30T10:00:00,28,Other,Active,2017385854#2226,2017-11-30T10:00:22
+Unscheduled,RWE,Moerdijk,Moerdijk 1,Gas,TenneT (NL),2017-11-30T00:55:00,2017-11-30T02:00:00,17,Outage,Active,2017385841#2226,2017-11-30T02:05:07
+Unscheduled,RWE,Moerdijk,Moerdijk 1,Gas,TenneT (NL),2017-11-27T01:00:00,2017-11-30T02:00:00,28,Outage,Active,2017385506#2226,2017-11-30T02:02:21
