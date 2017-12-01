@@ -373,8 +373,8 @@ class PostgrePipeline(object):
             self.pending_items.append(item)
             self.cur.execute(insert_query, item)
 
-            if item["event_id"] not in self.event_ids:
-                self.event_ids.append(item['event_id'])
+        if item["event_id"] not in self.event_ids:
+            self.event_ids.append(item['event_id'])
 
     def update_version_no(self, table_name, event_id):
         events_query = ("select id from {0}.{1} "
