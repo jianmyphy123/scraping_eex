@@ -270,3 +270,87 @@ Planned,RWE,Moerdijk,Moerdijk 1,Gas,TenneT (NL),2017-11-30T13:00:00,2017-11-30T1
 Unscheduled,RWE,Moerdijk,Moerdijk 1,Gas,TenneT (NL),2017-11-30T07:00:00,2017-11-30T10:00:00,28,Other,Active,2017385854#2226,2017-11-30T10:00:22
 Unscheduled,RWE,Moerdijk,Moerdijk 1,Gas,TenneT (NL),2017-11-30T00:55:00,2017-11-30T02:00:00,17,Outage,Active,2017385841#2226,2017-11-30T02:05:07
 Unscheduled,RWE,Moerdijk,Moerdijk 1,Gas,TenneT (NL),2017-11-27T01:00:00,2017-11-30T02:00:00,28,Outage,Active,2017385506#2226,2017-11-30T02:02:21
+type,company,facility,unit,fuel,control_area,begin_ts,end_ts,limitation,reason,status,event_id,last_update
+Unscheduled Limitation,KELAG,Pumpen/Speicher Feldsee,Pumpen/Speicher Feldsee,,APG,2017-12-04T00:00:00,2017-12-04T00:35:00,68,Outage,Active,3523-20171204-001329#2328,2017-12-04T01:01:04
+Planned,Axpo,EKW - Engadiner KW AG,Pradella - Ova Spin G1,Pumped Storage,SwissGrid,2017-12-05T19:00:00,2017-12-05T23:59:00,72,Outage,Active,#4968#2962,2017-12-04T09:29:32
+Planned,Axpo,EKW - Engadiner KW AG,Pradella - Ova Spin G1,Pumped Storage,SwissGrid,2017-12-05T12:00:00,2017-12-05T17:00:00,72,Outage,Active,#4967#2962,2017-12-04T09:29:32
+Planned,Axpo,EKW - Engadiner KW AG,Pradella - Ova Spin G3,Pumped Storage,SwissGrid,2017-12-05T15:00:00,2017-12-05T17:00:00,72,Outage,Active,#4966#2964,2017-12-04T09:27:30
+Planned,Axpo,EKW - Engadiner KW AG,Pradella - Ova Spin G1,Pumped Storage,SwissGrid,2017-12-04T19:00:00,2017-12-05T08:00:00,72,Outage,Active,#4965#2962,2017-12-04T09:27:08
+Unscheduled,Axpo,EKW - Engadiner KW AG,Martina - Pradella G2,Pumped Storage,SwissGrid,2017-12-04T08:01:00,2017-12-05T23:59:00,40,Outage,Active,#4962#2967,2017-12-04T09:26:07
+Unscheduled,Axpo,EKW - Engadiner KW AG,Pradella - Ova Spin G2,Pumped Storage,SwissGrid,2017-12-04T08:01:00,2017-12-05T23:59:00,72,Outage,Active,#4961#2963,2017-12-04T09:26:07
+Planned,Axpo,EKW - Engadiner KW AG,Pradella - Ova Spin G3,Pumped Storage,SwissGrid,2017-12-04T15:00:00,2017-12-04T17:00:00,72,Outage,Active,#4963#2964,2017-12-04T09:23:02
+Planned,Axpo,EKW - Engadiner KW AG,Pradella - Ova Spin G1,Pumped Storage,SwissGrid,2017-12-04T12:00:00,2017-12-04T17:00:00,72,Outage,Active,#4964#2962,2017-12-04T09:23:02
+Unscheduled,Axpo,KLL - KW Linth-Limmern AG,Limmern - Muttsee G4,Pumped Storage,SwissGrid,2017-12-03T01:05:00,2017-12-03T03:15:00,250,Outage,Active,#4958#2995,2017-12-03T03:24:00
+Unscheduled,Steag,KW Walsum,Walsum Block 10,Hard Coal,Amprion,2017-12-04T08:30:00,2017-12-04T11:00:00,145,Outage,Active,201704452#1994,2017-12-04T09:35:07
+Unscheduled,Steag,KW Fenne,Fenne HKV,Hard Coal,Amprion,2017-12-04T06:40:00,2017-12-04T12:00:00,71,Outage,Active,201704449#1264,2017-12-04T09:21:43
+Planned,RWE,Neurath,Neurath F,Lignite,Amprion,2017-12-05T00:00:00,2017-12-06T00:00:00,14,Other,Active,386267#906,2017-12-04T08:52:07
+Unscheduled,SW Düsseldorf,Kraftwerk Lausward,Block F,Gas,Amprion,2017-12-04T05:45:00,2017-12-04T09:00:00,595,Outage,Active,TPE-Strom--3366#1960,2017-12-04T08:51:05
+Unscheduled,RWE,Neurath,Neurath F,Lignite,Amprion,2017-12-04T05:31:00,2017-12-04T12:00:00,40,Other,Active,2017386252#906,2017-12-04T08:46:06
+Planned,VERBUND,KW Oberaudorf-Ebbs AT,Oberaudorf-Ebbs-AT,Run-of-River,APG,2017-12-05T06:45:00,2017-12-07T16:30:00,15.5,Maintenance,Active,X193036#2672,2017-12-04T08:10:11
+Planned,VERBUND,KW Oberaudorf-Ebbs DE,Oberaudorf-Ebbs-DE,Run-of-River,Tennet (DE),2017-12-05T06:45:00,2017-12-07T16:30:00,15.5,Maintenance,Active,X193036DE#2670,2017-12-04T08:10:11
+Unscheduled,RWE,Neurath,Neurath G,Lignite,Amprion,2017-12-02T23:00:00,2017-12-04T07:45:00,55,Other,Active,2017386184#920,2017-12-04T07:43:43
+Planned,RWE,Neurath,Neurath G,Lignite,Amprion,2017-12-04T07:46:00,2017-12-05T12:00:00,70,Other,Active,2017386263#920,2017-12-04T07:43:28
+Planned,RWE,Niederaußem,Niederaußem D,Lignite,Amprion,2017-12-04T07:35:00,2017-12-04T08:30:00,30,Outage,Inactive,2017386262#932,2017-12-04T07:40:05
+Unscheduled,RWE,Emsland,Emsland C,Gas,Amprion,2017-12-03T05:30:00,2017-12-03T06:49:00,78,Outage,Inactive,2017386202#962,2017-12-04T07:19:10
+Unscheduled,RWE,Niederaußem,Niederaußem E,Lignite,Amprion,2017-12-02T00:11:00,2017-12-04T07:11:00,15,Outage,Active,2017386097#933,2017-12-04T07:11:52
+Planned,RWE,Niederaußem,Niederaußem E,Lignite,Amprion,2017-12-04T07:12:00,2017-12-06T08:00:00,10,Outage,Active,2017386259#933,2017-12-04T07:11:28
+Unscheduled,Steag,KW Walsum,Walsum Block 10,Hard Coal,Amprion,2017-12-04T06:58:00,2017-12-04T07:30:00,80,Outage,Active,201704450#1994,2017-12-04T07:04:04
+Unscheduled,RWE,Huckingen (HKM),Huckingen B,Coal-derived Gas,Amprion,2017-12-03T21:40:00,2017-12-04T06:45:00,60,Other,Active,2017386236#925,2017-12-04T06:48:01
+Unscheduled,RWE,Huckingen (HKM),Huckingen A,Coal-derived Gas,Amprion,2017-12-03T21:40:00,2017-12-04T06:45:00,60,Other,Active,2017386235#956,2017-12-04T06:47:26
+Unscheduled,Steag,KW Herne,Herne Block 4,Hard Coal,Amprion,2017-12-04T06:40:00,2017-12-04T08:00:00,180,Outage,Active,201704448#1254,2017-12-04T06:41:55
+Planned,RWE,Niederaußem,Niederaußem F,Lignite,Amprion,2017-12-05T22:00:00,2017-12-10T19:00:00,307,Outage,Active,2017386254#898,2017-12-04T06:11:23
+Unscheduled,RWE,Neurath,Neurath F,Lignite,Amprion,2017-12-02T23:00:00,2017-12-04T05:30:00,30,Other,Active,2017386183#906,2017-12-04T05:32:53
+Unscheduled,RWE,Niederaußem,Niederaußem D,Lignite,Amprion,2017-12-04T05:00:00,2017-12-04T15:00:00,10,Outage,Active,2017386250#932,2017-12-04T05:14:02
+Unscheduled,RWE,Niederaußem,Niederaußem C,Lignite,Amprion,2017-12-02T06:02:00,2017-12-04T22:25:00,10,Other,Active,2017386117#907,2017-12-04T05:12:46
+Unscheduled,RWE,Niederaußem,Niederaußem K (BoA 1),Lignite,Amprion,2017-12-04T04:00:00,2017-12-04T06:00:00,100,Outage,Active,2017386248#934,2017-12-04T04:00:31
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-04T03:10:00,2017-12-04T04:00:00,50,Other,Active,2017386247#923,2017-12-04T03:12:03
+Planned,RWE,Neurath,Neurath F,Lignite,Amprion,2017-12-03T00:00:00,2017-12-04T00:00:00,12,Other,Active,386134#906,2017-12-04T01:44:07
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-03T23:40:00,2017-12-04T01:00:00,280,Other,Active,2017386244#923,2017-12-04T00:53:36
+Planned,Steag,KW Fenne,Fenne HKV,Hard Coal,Amprion,2017-12-03T00:00:00,2017-12-04T00:48:00,111,Maintenance,Active,201704434#1264,2017-12-04T00:50:00
+Unscheduled,RWE,Niederaußem,Niederaußem H,Lignite,Amprion,2017-12-03T20:12:00,2017-12-04T01:30:00,270,Outage,Active,2017386229#911,2017-12-04T00:46:17
+Unscheduled,RWE,Niederaußem,Niederaußem F,Lignite,Amprion,2017-11-29T12:56:00,2017-12-05T08:00:00,10,Other,Active,2017385779#898,2017-12-03T23:47:15
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-03T23:20:00,2017-12-04T01:00:00,250,Other,Inactive,2017386243#923,2017-12-03T23:42:52
+Planned,Statkraft,PSW Erzhausen,PSW Erzhausen,Pumped Storage,Tennet (DE),2017-12-03T23:25:00,2017-12-04T17:00:00,55,Outage,Active,73720-TEM12#1221,2017-12-03T23:21:10
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-03T22:45:00,2017-12-03T23:20:00,150,Other,Active,2017386239#923,2017-12-03T23:21:10
+Unscheduled,RWE,Niederaußem,Niederaußem F,Lignite,Amprion,2017-12-03T23:15:00,2017-12-05T15:00:00,10,Other,Active,2017386242#898,2017-12-03T23:15:30
+Planned,Uniper,Kiel,Kiel,Hard Coal,Tennet (DE),2017-12-02T21:00:00,2017-12-03T22:00:00,323,Maintenance,Active,M12-036382#625,2017-12-03T23:08:53
+Unscheduled,RWE,Weisweiler,Weisweiler H,Lignite,Amprion,2017-12-03T22:20:00,2017-12-03T23:30:00,100,Other,Inactive,2017386238#923,2017-12-03T22:44:15
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-04T00:00:00,2017-12-05T00:00:00,19,Outage,Active,2017386227#922,2017-12-03T18:12:48
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-03T18:00:00,2017-12-04T05:00:00,104,Maintenance,Active,1034898#3196,2017-12-03T15:35:11
+Planned,ENGIE DE,Kraftwerk Zolling,DEZOLLI____1_____,Hard Coal,Tennet (DE),2017-12-04T13:00:00,2017-12-04T15:00:00,122,Other,Active,fa0d9cb09f2a432#1297,2017-12-03T14:25:14
+Planned,Steag,KW Lünen,Lünen Block 7,Hard Coal,Amprion,2017-12-03T06:00:00,2017-12-03T13:30:00,324,Maintenance,Active,201704433#1247,2017-12-03T14:09:23
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-03T05:15:00,2017-12-03T14:00:00,104,Maintenance,Active,1034891#3196,2017-12-03T13:23:15
+Planned,RWE,Frechen/Wachtberg,Fabrik Frechen/Wachtberg,Lignite,Amprion,2017-12-03T06:00:00,2017-12-03T12:00:00,15,Outage,Active,2017386200#953,2017-12-03T11:59:15
+Planned,LEAG,KW Boxberg,KW Boxberg Block N,Lignite,50Hertz,2017-12-08T00:00:00,2017-12-08T01:00:00,144,Maintenance,Inactive,1034894#3193,2017-12-03T11:27:15
+Planned,LEAG,KW Boxberg,KW Boxberg Block N,Lignite,50Hertz,2017-12-03T20:00:00,2017-12-06T17:00:00,500,Maintenance,Active,1034895#3193,2017-12-03T11:27:15
+Planned,LEAG,KW Boxberg,KW Boxberg Block N,Lignite,50Hertz,2017-12-06T17:00:00,2017-12-07T02:00:00,335,Maintenance,Active,1034897#3193,2017-12-03T11:27:11
+Planned,LEAG,KW Boxberg,KW Boxberg Block N,Lignite,50Hertz,2017-12-07T02:00:00,2017-12-07T03:00:00,144,Maintenance,Active,1034896#3193,2017-12-03T11:27:11
+Planned,LEAG,KW Boxberg,KW Boxberg Block N,Lignite,50Hertz,2017-12-07T18:00:00,2017-12-08T00:00:00,335,Maintenance,Inactive,1034893#3193,2017-12-03T11:27:11
+Planned,LEAG,KW Boxberg,KW Boxberg Block N,Lignite,50Hertz,2017-12-03T12:00:00,2017-12-03T20:00:00,288,Maintenance,Active,1034714#3193,2017-12-03T11:01:11
+Planned,LEAG,KW Boxberg,KW Boxberg Block N,Lignite,50Hertz,2017-12-24T00:00:00,2018-01-02T14:00:00,290,Maintenance,Active,1034892#3193,2017-12-03T10:58:11
+Unscheduled,RWE,Huckingen (HKM),Huckingen A,Coal-derived Gas,Amprion,2017-12-03T06:15:00,2017-12-03T10:30:00,60,Other,Active,2017386198#956,2017-12-03T10:36:33
+Planned,RWE,Huckingen (HKM),Huckingen B,Coal-derived Gas,Amprion,2017-12-03T06:15:00,2017-12-03T10:30:00,60,Other,Active,2017386199#925,2017-12-03T10:36:13
+Unscheduled,EnBW,Kraftwerk Rostock,Kraftwerk Rostock,Hard Coal,50Hertz,2017-12-03T09:11:00,2017-12-03T10:00:00,150,Outage,Active,22245012#1318,2017-12-03T09:56:15
+Planned,VERBUND,KW Schaerding-Neuhaus DE,Svchaerding-Neuhaus-DE,Run-of-River,Tennet (DE),2017-10-09T11:31:15,2017-12-07T16:00:00,11.6,Maintenance,Active,X179105DE#2681,2017-12-03T09:40:12
+Planned,VERBUND,KW Schaerding-Neuhaus AT,Schaerding-Neuhaus-AT,Run-of-River,APG,2017-10-09T11:31:15,2017-12-07T16:00:00,11.6,Maintenance,Active,X179105#2679,2017-12-03T09:40:12
+Planned,RWE,Neurath,Neurath B,Lignite,Amprion,2017-12-02T01:59:00,2017-12-04T02:00:00,294,Outage,Active,2017386031#931,2017-12-03T09:10:32
+Planned,RWE,Neurath,Neurath D,Lignite,Amprion,2017-12-02T00:51:00,2017-12-03T09:07:00,604,Outage,Active,2017386004#897,2017-12-03T09:09:22
+Planned,RWE,Emsland,Emsland C,Gas,Amprion,2017-12-03T21:30:00,2017-12-05T00:00:00,78,Outage,Active,2017386061#962,2017-12-03T08:33:13
+Planned,RWE,Emsland,Emsland C,Gas,Amprion,2017-12-03T05:30:00,2017-12-03T13:30:00,78,Outage,Active,2017386060#962,2017-12-03T08:32:28
+Unscheduled,RWE,Niederaußem,Niederaußem G,Lignite,Amprion,2017-12-03T08:11:00,2017-12-03T16:00:00,25,Other,Active,2017386206#944,2017-12-03T08:13:11
+Planned,PreussenElektra,Brokdorf,Brokdorf,Nuclear,Tennet (DE),2017-12-03T06:00:00,2017-12-03T07:15:00,310,Maintenance,Active,M12-032450#3185,2017-12-03T07:43:32
+Planned,RWE,Fortuna Nord,Fabrik Fortuna Nord,Lignite,Amprion,2017-12-03T07:00:00,2017-12-07T06:00:00,11,Outage,Active,2017386204#734,2017-12-03T06:58:07
+Planned,RWE,Neurath,Neurath F,Lignite,Amprion,2017-12-04T00:00:00,2017-12-05T00:00:00,14,Other,Active,386203#906,2017-12-03T06:55:46
+Planned,LEAG,KW Boxberg,KW Boxberg Block R,Lignite,50Hertz,2017-12-02T23:00:00,2017-12-03T05:00:00,104,Maintenance,Active,1034890#3196,2017-12-03T03:44:11
+Planned,SW München,"HKW Süd, Anlage GuD2",SWM HKW Süd GuD2 DT60,Gas,Tennet (DE),2017-12-03T01:00:00,2017-12-03T04:00:00,64,Maintenance,Active,SWM55779533404#2913,2017-12-03T02:59:52
+Planned,SW München,"HKW Süd, Anlage GuD2",SWM HKW Süd GuD2 GT62,Gas,Tennet (DE),2017-12-03T01:00:00,2017-12-03T04:00:00,136,Maintenance,Active,SWM55779501767#2915,2017-12-03T02:59:51
+Planned,RWE,Huckingen (HKM),Huckingen B,Coal-derived Gas,Amprion,2017-12-03T02:00:00,2017-12-03T08:00:00,60,Other,Inactive,2017386192#925,2017-12-03T02:37:15
+Planned,RWE,Huckingen (HKM),Huckingen A,Coal-derived Gas,Amprion,2017-12-03T02:00:00,2017-12-03T08:00:00,60,Other,Inactive,2017386191#956,2017-12-03T02:36:40
+Planned,RWE,Weisweiler,Weisweiler F,Lignite,Amprion,2017-12-03T02:00:00,2017-12-03T03:00:00,108,Other,Inactive,2016354117#952,2017-12-03T02:26:34
+Planned,RWE,Neurath,Neurath F,Lignite,Amprion,2017-12-02T00:00:00,2017-12-03T00:00:00,11,Other,Active,386027#906,2017-12-03T00:01:55
+Planned,RWE,Weisweiler,Weisweiler G,Lignite,Amprion,2017-12-02T00:00:00,2017-12-03T00:00:00,18,Outage,Active,386020#922,2017-12-03T00:00:52
+Unscheduled,Nuon,Prinses Alexia Windpark,Prinses Alexia Windpark,Wind (Onshore),TenneT (NL),2017-12-03T18:45:00,2017-12-04T17:00:00,107,Maintenance,Active,1032074#2443,2017-12-04T07:11:48
+Unscheduled,RWE,Amer,Amer 9,Hard Coal,TenneT (NL),2017-12-01T09:30:00,2017-12-01T10:00:00,45,Other,Inactive,2017386010#2204,2017-12-04T07:08:48
+Planned,RWE,Amer,Amer 9,Hard Coal,TenneT (NL),2017-12-03T03:00:00,2017-12-03T17:40:00,120,Outage,Active,2017385668#2204,2017-12-03T17:33:25
+Unscheduled,Nuon,Prinses Alexia Windpark,Prinses Alexia Windpark,Wind (Onshore),TenneT (NL),2017-12-03T07:30:00,2017-12-03T17:00:00,107,Maintenance,Active,1032072#2443,2017-12-03T10:08:11
+Planned,Nuon,Velsen,Ijmond,Other,TenneT (NL),2017-12-04T23:00:00,2017-12-07T00:00:00,144,Other,Active,1032073#2448,2017-12-03T09:31:31
