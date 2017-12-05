@@ -15,6 +15,8 @@ from selenium.common.exceptions import TimeoutException
 
 from bs4 import BeautifulSoup
 
+import pytz
+
 class EexTransparencySpider(scrapy.Spider):
     name = 'eex_availability'
     history_url_list = ['https://www.eex-transparency.com/homepage/power/austria/production/availability/non-usability-/non-usability-history-',
@@ -203,13 +205,13 @@ class EexTransparencySpider(scrapy.Spider):
                     'unit': record['unit'],
                     'fuel': record['fuel'] if 'fuel' in record.keys() else "" ,
                     'control_area': record['connecting_area'],
-                    'begin_ts': datetime.datetime.fromtimestamp(record['begin'] / 1000).strftime("%Y-%m-%dT%H:%M:%S"),
-                    'end_ts': datetime.datetime.fromtimestamp(record['end'] / 1000).strftime("%Y-%m-%dT%H:%M:%S"),
+                    'begin_ts': datetime.datetime.fromtimestamp(record['begin'] / 1000, tz=pytz.timezone('CET')).strftime("%Y-%m-%dT%H:%M:%S"),
+                    'end_ts': datetime.datetime.fromtimestamp(record['end'] / 1000, tz=pytz.timezone('CET')).strftime("%Y-%m-%dT%H:%M:%S"),
                     'limitation': record['energy_limitation'],
                     'reason': record['reason'],
                     'status': record['canceled'],
                     'event_id': record['event_id'],
-                    'last_update': datetime.datetime.fromtimestamp(record['modify_timestamp'] / 1000).strftime("%Y-%m-%dT%H:%M:%S")
+                    'last_update': datetime.datetime.fromtimestamp(record['modify_timestamp'] / 1000, tz=pytz.timezone('CET')).strftime("%Y-%m-%dT%H:%M:%S")
                 }
 
                 yield item
