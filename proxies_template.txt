@@ -1,2 +1,0 @@
-# Add your proxies here in format:
-# http://username:password@host:port

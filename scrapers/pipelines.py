@@ -5,63 +5,12 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
+import json
 import os
-import shutil
-import csv
-from zipfile import ZipFile
-from tempfile import TemporaryFile
-import urllib.parse
-import urllib.request
 import datetime
-
-import pandas as pd
 import psycopg2
 
 from scrapers.config import POSTGRE_CREDENTIALS
-
-# pipeline that export csv file
-class CSVPipeline(object):
-    """This pipeline saves items to corresponding csv files, divided by month"""
-
-    # csv file buffers
-    csv_files = {}
-    # csv file writers to save by row
-    csv_writers = {}
-    header = ['type', 'company', 'facility', 'unit', 'fuel',
-              'control_area', 'begin_ts', 'end_ts', 'limitation', 'reason', 'status', 'event_id', 'last_update']
-
-    # initialize
-    def open_spider(self, spider):
-        self.csv_files[spider] = {}
-        self.csv_writers[spider] = {}
-
-    def close_spider(self, spider):
-        for file in self.csv_files[spider].values():
-            try:
-                file.close()
-            except Exception as e:
-                print("Exception on closing file:")
-                print(e)
-
-    # the part of processing item
-    # spider.scrape_dir: csv
-    # spider.name      : eex_availability
-    def process_item(self, item, spider):
-        filename = os.path.join(spider.scrape_dir,
-                                ''.join([spider.name, item['parse_date'].strftime('%Y-%m'), '.csv']))
-        try:
-            self.csv_writers[spider][filename].writerow(item)
-        except KeyError:
-            print("File does not exist. Creating file...")
-            self.csv_files[spider][filename] = open(filename, mode='a')
-            print("File ", self.csv_files[spider][filename], " created.")
-            self.csv_writers[spider][filename] = csv.DictWriter(self.csv_files[spider][filename],
-                                                                fieldnames=self.header,
-                                                                extrasaction='ignore')
-            self.csv_writers[spider][filename].writeheader()
-            self.csv_writers[spider][filename].writerow(item)
-
-        return item
 
 # save item to Postgre
 class PostgrePipeline(object):
@@ -71,8 +20,6 @@ class PostgrePipeline(object):
     POSTGRE_CREDENTIALS variable.
     """
     pg_credentials = POSTGRE_CREDENTIALS
-    header = ['type', 'company', 'facility', 'unit', 'fuel',
-              'control_area', 'begin_ts', 'end_ts', 'limitation', 'reason', 'status', 'event_id', 'last_update']
     schema = 'covalis1'
 
     # connect to Postgre
@@ -85,12 +32,15 @@ class PostgrePipeline(object):
         self.pending_items = []
         self.failed_items = []
         self.event_ids = []
+        self.db_inserted_item_count = 0
+        self.db_passed_item_count = 0
 
     # create table to save data
     def open_spider(self, spider):
         self.create_table(spider.table)
 
     def close_spider(self, spider):
+
         try:
             self.connection.commit()
             self.pending_items.clear()
@@ -106,15 +56,18 @@ class PostgrePipeline(object):
             for failed in self.failed_items:
                 print(failed)
 
-        print("FAILED ITEMS:")
-        for item in self.failed_items:
-            print(item)
-
         # update version number for every collected event ids when spider is closing
         for event_id in self.event_ids:
             self.update_version_no(spider.table, event_id)
 
         self.event_ids.clear()
+
+        # save item_scraped_count to log file
+        with open(spider.log_file_name, mode='w+') as log_file:
+            spider.scrape_info['item_scraped_count'] = spider.item_scraped_count
+            spider.scrape_info['db_inserted_item_count'] = self.db_inserted_item_count
+            spider.scrape_info['db_passed_item_count'] = self.db_passed_item_count
+            json.dump(spider.scrape_info, log_file, indent=4)
 
     # save item to Postgre
     def process_item(self, item, spider):
@@ -197,6 +150,7 @@ class PostgrePipeline(object):
         rows = self.cur.fetchall()
 
         if len(rows) > 0:
+            self.db_passed_item_count += 1
             pass
         else:
             insert_query = ("INSERT INTO {0}.{1} ("
@@ -232,6 +186,8 @@ class PostgrePipeline(object):
 
             self.pending_items.append(item)
             self.cur.execute(insert_query, item)
+
+            self.db_inserted_item_count += 1
 
         # collect event_ids to update
         if item["event_id"] not in self.event_ids:
