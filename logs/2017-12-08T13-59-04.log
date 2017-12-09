@@ -1,0 +1,13 @@
+{
+    "start_date": "2017-8-24",
+    "end_date": "2017-8-24",
+    "item_scraped_count": 333,
+    "failed_data": {
+        "2017-08-24": [
+            "https://www.eex-transparency.com/homepage/power/italy/production/availability/non-usability/non-usability-history-",
+            "https://www.eex-transparency.com/homepage/power/the-netherlands/production/availability/non-usability/non-usability-history-"
+        ]
+    },
+    "db_inserted_item_count": 333,
+    "db_passed_item_count": 0
+}

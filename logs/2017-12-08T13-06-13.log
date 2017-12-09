@@ -1,0 +1,13 @@
+{
+    "start_date": "2017-8-24",
+    "end_date": "2017-8-24",
+    "item_scraped_count": 78,
+    "failed_data": {
+        "2017-08-24": [
+            "https://www.eex-transparency.com/homepage/power/germany/production/availability/non-usability/non-usability-history-",
+            "https://www.eex-transparency.com/homepage/power/great-britain/production/availability/non-usability/non-usability-history-"
+        ]
+    },
+    "db_inserted_item_count": 78,
+    "db_passed_item_count": 0
+}

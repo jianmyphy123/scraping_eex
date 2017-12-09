@@ -280,6 +280,8 @@ class ScrapeJS(object):
                     'sc.from = from.toDate();\n'
                     'sc.$apply();\n'
                     '$("#from").blur();\n'
+                    'sc.canceled = "all";\n'
+                    'sc.selectCanceled();\n'
                  '}\n'
                 ),
             'isEmptyTableData':
