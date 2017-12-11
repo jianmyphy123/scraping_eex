@@ -15,7 +15,8 @@ class EexTransparencySpider(scrapy.Spider):
     name = 'eex_transparency'
 
     # the urls to fetch date range data
-    history_url_list = ['https://www.eex-transparency.com/homepage/power/austria/production/availability/non-usability-/non-usability-history-',
+    history_url_list = [
+                        'https://www.eex-transparency.com/homepage/power/austria/production/availability/non-usability-/non-usability-history-',
                         'https://www.eex-transparency.com/homepage/power/belgium/production/availability/non-usability/non-usability-history-',
                         'https://www.eex-transparency.com/homepage/power/switzerland/production/availability/non-usability/non-usability-history-',
                         'https://www.eex-transparency.com/homepage/power/czech-republic/production/availability/non-usability/non-usability',
@@ -25,6 +26,18 @@ class EexTransparencySpider(scrapy.Spider):
                         'https://www.eex-transparency.com/homepage/power/italy/production/availability/non-usability/non-usability-history-',
                         'https://www.eex-transparency.com/homepage/power/the-netherlands/production/availability/non-usability/non-usability-history-'
                         ]
+    
+    history_url_list_dict = {
+        "austria": 'https://www.eex-transparency.com/homepage/power/austria/production/availability/non-usability-/non-usability-history-',
+        "belgium": 'https://www.eex-transparency.com/homepage/power/belgium/production/availability/non-usability/non-usability-history-',
+        "switzerland": 'https://www.eex-transparency.com/homepage/power/switzerland/production/availability/non-usability/non-usability-history-',
+        "czech-republic": 'https://www.eex-transparency.com/homepage/power/czech-republic/production/availability/non-usability/non-usability',
+        "germany": 'https://www.eex-transparency.com/homepage/power/germany/production/availability/non-usability/non-usability-history-',
+        "great-britain": 'https://www.eex-transparency.com/homepage/power/great-britain/production/availability/non-usability/non-usability-history-',
+        "hungary": 'https://www.eex-transparency.com/homepage/power/hungary/production/availability/non-usability/non-usability-history',
+        "italy": 'https://www.eex-transparency.com/homepage/power/italy/production/availability/non-usability/non-usability-history-',
+        "the-netherlands": 'https://www.eex-transparency.com/homepage/power/the-netherlands/production/availability/non-usability/non-usability-history-'
+    }
 
     # the urls to fetch recent data (today and yesterday)
     recent_url_list = ['https://www.eex-transparency.com/homepage/power/austria/storage/availability/non-usability',
@@ -44,26 +57,42 @@ class EexTransparencySpider(scrapy.Spider):
         }
     }
 
-    def __init__(self,
-                 start=datetime.datetime.utcnow().strftime("%Y-%m-%d"),
-                 end=datetime.datetime.utcnow().strftime("%Y-%m-%d"),
-                 table='',
-                 mode='recent'):
+    def __init__(self, mode='recent', period=None, country=None):
         super().__init__()
+        
+        if mode == 'history':
+            if period == None:
+                print('Parameter error')
+            else:
+                self.period = period
+                
+                period = period.split('-')
+                if len(period) != 2:
+                    print('Parameter error')
+                else:
+                    year = period[0]
+                    month = period[1]
+                    start = '-'.join([year, month, "1"])
+                    next_month_day = '-'.join([year, str(int(month) + 1), "1"])
+                    end = datetime.datetime.strptime(next_month_day, '%Y-%m-%d') - datetime.timedelta(days=1)
+                    end = end.strftime("%Y-%m-%d")
+                    
+                    self.start      = datetime.datetime.strptime(start, '%Y-%m-%d')
+                    self.end        = datetime.datetime.strptime(end, '%Y-%m-%d')
+                    
+            if country is not None:
+                if country not in self.history_url_list_dict.keys():
+                    print('Parameter error')
+                else:
+                    self.history_url_list = [self.history_url_list_dict[country]]
+                
 
-        self.start      = datetime.datetime.strptime(start, '%Y-%m-%d')
-        self.end        = datetime.datetime.strptime(end, '%Y-%m-%d')
-        # this variable is used for 'history' mode
-        # this variable iterates from start date to end date
-        self.cur_date   = datetime.datetime.strptime(start, '%Y-%m-%d')
-        self.now_date   = datetime.datetime.strptime(start, '%Y-%m-%d')
+        now_date = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+        self.now_date   = datetime.datetime.strptime(now_date, '%Y-%m-%d')
 
         # postgre database table name definition
-        if table:
-            self.table = table
-        else:
-            self.table = self.name
-
+        self.table = self.name
+            
         self.mode = mode
         self.scraper = ScrapeJS()
 
@@ -74,12 +103,20 @@ class EexTransparencySpider(scrapy.Spider):
         self.log_file_name = 'logs/' + datetime.datetime.utcnow().strftime("%Y-%m-%dT%H-%M-%S") + '.log'
         self.item_scraped_count = 0
         with open(self.log_file_name, mode='w+') as log_file:
-            self.scrape_info = {
-                'start_date': start,
-                'end_date': end,
-                'item_scraped_count': 0,
-                'failed_data': {}
-            }
+            if mode == 'history':
+                self.scrape_info = {
+                    'start_date': start,
+                    'end_date': end,
+                    'item_scraped_count': 0,
+                    'failed_data': {}
+                }
+            elif mode == 'recent':
+                self.scrape_info = {
+                    'start_date': now_date,
+                    'end_date': now_date,
+                    'item_scraped_count': 0,
+                    'failed_data': {}
+                }
             json.dump(self.scrape_info, log_file, indent=4)
 
     def start_requests(self):
@@ -114,42 +151,83 @@ class EexTransparencySpider(scrapy.Spider):
         else:
             print('Parameter Error.')
             yield
-
-
+                
     def parse_history(self, url):
         self.driver.get(url)
+        
+        first_page_loaded = self._load_page(self.start, self.end, url)
+        
+        if first_page_loaded:
+            pass
+        else:
+            print("Unable to load page. Skipping.")
+            yield
+        
+        print("[*] Parsing page")
 
-        self.cur_date = self.start
-        while self.cur_date <= self.end:
-            print('[*] Loading page')
-            page_loaded = self._load_page(self.cur_date, url)
+        data_object = self.driver.execute_script(self.scraper.get_history_table_data())
 
-            if page_loaded:
-                pass
-            else:
-                print("Unable to load page. Skipping.")
-                self.cur_date = self.cur_date + datetime.timedelta(days=1)
-                continue
+        items = self.parse_data_object(data_object)
+        if items is None:
+            print('Items not found in that url: ', url)
+            yield
+        else:
+            for item in items:
+                yield item
+            
+            check_next_page = self.driver.execute_script(self.scraper.check_next_page())
+            
+            if check_next_page:
+                self.driver.execute_script(self.scraper.load_next_page())
+                items = self.parse_history_details(url)
+                
+                if items is None:
+                    print('Items not found in that url: ', url)
+                    # log file
+                    yield
+                else:
+                    for item in items:
+                        yield item
+    
+    def parse_history_details(self, url):
+        page_loaded = self._load_page_history(url)
+        
+        if page_loaded:
+            pass
+        else:
+            print("Unable to load page. Skipping.")
+            yield
+        
+        data_object = self.driver.execute_script(self.scraper.get_history_table_data())
 
-            print("[*] Parsing page")
-
-            data_object = self.driver.execute_script(self.scraper.get_history_table_data())
-
-            items = self.parse_data_object(data_object, self.cur_date)
-            if items is None:
-                print('Items not found in that url: ', url)
-                yield
-            else:
-                for item in items:
-                    yield item
-
-                self.cur_date = self.cur_date + datetime.timedelta(days=1)
+        items = self.parse_data_object(data_object)
+        if items is None:
+            # print('Items not found in that url: ', url)
+            yield
+        else:
+            for item in items:
+                yield item
+            
+            check_next_page = self.driver.execute_script(self.scraper.check_next_page())
+            
+            
+            if check_next_page:
+                self.driver.execute_script(self.scraper.load_next_page())
+                items = self.parse_history_details(url)
+                
+                if items is None:
+                    print('Items not found in that url: ', url)
+                    # log file
+                    yield
+                else:
+                    for item in items:
+                        yield item
 
     def parse_recent(self, url):
         self.driver.get(url)
 
         print('[*] Loading page')
-        page_loaded = self._load_page(self.now_date, url)
+        page_loaded = self._load_page(self.now_date, self.now_date, url)
 
         if page_loaded:
             pass
@@ -160,7 +238,7 @@ class EexTransparencySpider(scrapy.Spider):
         print("[*] Parsing page")
         data_object = self.driver.execute_script(self.scraper.get_recent_table_data())
 
-        items = self.parse_data_object(data_object, self.now_date)
+        items = self.parse_data_object(data_object)
         if items is None:
             print('Items not found in that url: ', url)
             yield
@@ -169,7 +247,7 @@ class EexTransparencySpider(scrapy.Spider):
                 yield item
 
 
-    def _load_page(self, date, url):
+    def _load_page(self, start, end, url):
         """
         Loads particular date.
 
@@ -178,13 +256,13 @@ class EexTransparencySpider(scrapy.Spider):
         """
 
         if self.mode == 'history':
-            print("---- Loading date: ", date, ' ----')
+            print("---- Loading date: ", start, ' ', end, ' ----')
 
             try:
-                self.driver.execute_script(self.scraper.set_dates(date, date))
+                self.driver.execute_script(self.scraper.set_dates(start, end))
             except selenium_exceptions.WebDriverException as e:
                 print("LOAD DATE ERROR:", e.msg)
-                self._log_failed_data(date, url)
+                self._log_failed_data(self.period, url)
                 return False
 
 
@@ -192,7 +270,6 @@ class EexTransparencySpider(scrapy.Spider):
 
         # check that page loaded
         try:
-
             WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@class='timestamp']")))
             return True
         except TimeoutException:
@@ -203,12 +280,28 @@ class EexTransparencySpider(scrapy.Spider):
                 return True
 
             print("ERROR: Page load timeout.")
-            self._log_failed_data(date, url)
+            if self.mode == 'history':
+                self._log_failed_data(self.period, url)
+            elif self.mode == 'recent':
+                self._log_failed_data(start, url)
+            return False
+        
+    def _load_page_history(self, url):
+        try:
+            WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@class='timestamp']")))
+            return True
+        except TimeoutException:
+            print("ERROR: Page load timeout.")
+            self._log_failed_data(self.period, url)
             return False
 
     def _log_failed_data(self, date, url):
         with open(self.log_file_name, mode='w+') as log_file:
-            failed_date_str = date.strftime('%Y-%m-%d')
+            if self.mode == 'recent':
+                failed_date_str = date.strftime('%Y-%m-%d')
+            else:
+                failed_date_str = date
+               
             if failed_date_str not in self.scrape_info['failed_data'].keys():
                 self.scrape_info['failed_data'][failed_date_str] = []
                 self.scrape_info['failed_data'][failed_date_str].append(url)
@@ -217,7 +310,7 @@ class EexTransparencySpider(scrapy.Spider):
             json.dump(self.scrape_info, log_file, indent=4)
 
 
-    def parse_data_object(self, data_object, parse_date):
+    def parse_data_object(self, data_object):
         """
         Parses data object to items
         :param data_object: Source data object.
@@ -229,7 +322,6 @@ class EexTransparencySpider(scrapy.Spider):
         else:
             for record in data_object:
                 item = {
-                    'parse_date': parse_date,
                     'type': record['type'],
                     'company': record['short_name'],
                     'facility': record['prodcon'],
@@ -291,6 +383,20 @@ class ScrapeJS(object):
                     'return !classList.contains("ng-hide");\n'
                 '}\n'
                 ),
+            'checkNextPage':
+                ('function checkNextPage() {\n'
+                    'var e = document.getElementsByClassName("next");\n'
+                    'var classList = e[0].classList\n'
+                    'return !classList.contains("ng-hide");\n'
+                '}\n'
+                ),
+            'loadNextPage':
+                ('function loadNextPage() {\n'
+                    'var e = document.getElementById("from");\n'
+                    'var sc = angular.element(e).scope();\n'
+                    'sc.next();\n'
+                '}\n'
+                ),
         }
 
     def get_history_table_data(self):
@@ -309,3 +415,11 @@ class ScrapeJS(object):
     def is_empty_table_data(self):
         """Returns JavaScript to check if loaded data is empty."""
         return self._definitions['isEmptyTableData'] + '\n' + 'return isEmptyTableData();'
+        
+    def check_next_page(self):
+        """Returns JavaScript to check if next page exist."""
+        return self._definitions['checkNextPage'] + '\n' + 'return checkNextPage();'
+    
+    def load_next_page(self):
+        """Returns JavaScript to get next page."""
+        return self._definitions['loadNextPage'] + '\n' + 'return loadNextPage();'
