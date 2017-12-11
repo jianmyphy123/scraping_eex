@@ -1,0 +1,18 @@
+{
+    "start_date": "2017-9-1",
+    "end_date": "2017-09-30",
+    "item_scraped_count": 11575,
+    "failed_data": {
+        "2017-9": [
+            "https://www.eex-transparency.com/homepage/power/belgium/production/availability/non-usability/non-usability-history-",
+            "https://www.eex-transparency.com/homepage/power/switzerland/production/availability/non-usability/non-usability-history-",
+            "https://www.eex-transparency.com/homepage/power/czech-republic/production/availability/non-usability/non-usability",
+            "https://www.eex-transparency.com/homepage/power/czech-republic/production/availability/non-usability/non-usability",
+            "https://www.eex-transparency.com/homepage/power/czech-republic/production/availability/non-usability/non-usability",
+            "https://www.eex-transparency.com/homepage/power/czech-republic/production/availability/non-usability/non-usability",
+            "https://www.eex-transparency.com/homepage/power/czech-republic/production/availability/non-usability/non-usability"
+        ]
+    },
+    "db_inserted_item_count": 10771,
+    "db_passed_item_count": 804
+}

@@ -1,0 +1,12 @@
+{
+    "start_date": "2017-9-1",
+    "end_date": "2017-09-30",
+    "item_scraped_count": 12187,
+    "failed_data": {
+        "2017-9": [
+            "https://www.eex-transparency.com/homepage/power/germany/production/availability/non-usability/non-usability-history-"
+        ]
+    },
+    "db_inserted_item_count": 9623,
+    "db_passed_item_count": 2564
+}

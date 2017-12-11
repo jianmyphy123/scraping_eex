@@ -96,7 +96,7 @@ class EexTransparencySpider(scrapy.Spider):
         self.mode = mode
         self.scraper = ScrapeJS()
 
-        self.driver = webdriver.PhantomJS('./phantomjs/mac/phantomjs')
+        self.driver = webdriver.PhantomJS('./phantomjs/linux/phantomjs')
         # self.driver = webdriver.Chrome('./chromedriver')
 
         # setting log file
@@ -166,7 +166,6 @@ class EexTransparencySpider(scrapy.Spider):
         print("[*] Parsing page")
 
         data_object = self.driver.execute_script(self.scraper.get_history_table_data())
-
         items = self.parse_data_object(data_object)
         if items is None:
             print('Items not found in that url: ', url)
@@ -176,7 +175,6 @@ class EexTransparencySpider(scrapy.Spider):
                 yield item
             
             check_next_page = self.driver.execute_script(self.scraper.check_next_page())
-            
             if check_next_page:
                 self.driver.execute_script(self.scraper.load_next_page())
                 items = self.parse_history_details(url)
@@ -199,7 +197,6 @@ class EexTransparencySpider(scrapy.Spider):
             yield
         
         data_object = self.driver.execute_script(self.scraper.get_history_table_data())
-
         items = self.parse_data_object(data_object)
         if items is None:
             # print('Items not found in that url: ', url)
@@ -209,7 +206,6 @@ class EexTransparencySpider(scrapy.Spider):
                 yield item
             
             check_next_page = self.driver.execute_script(self.scraper.check_next_page())
-            
             
             if check_next_page:
                 self.driver.execute_script(self.scraper.load_next_page())

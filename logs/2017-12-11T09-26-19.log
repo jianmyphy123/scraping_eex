@@ -1,0 +1,8 @@
+{
+    "start_date": "2017-9-1",
+    "end_date": "2017-09-30",
+    "item_scraped_count": 15036,
+    "failed_data": {},
+    "db_inserted_item_count": 4179,
+    "db_passed_item_count": 10857
+}
