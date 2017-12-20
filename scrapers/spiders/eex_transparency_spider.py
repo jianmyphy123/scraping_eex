@@ -11,6 +11,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
+import calendar
+
 class EexTransparencySpider(scrapy.Spider):
     name = 'eex_transparency'
 
@@ -73,10 +75,7 @@ class EexTransparencySpider(scrapy.Spider):
                     year = period[0]
                     month = period[1]
                     start = '-'.join([year, month, "1"])
-                    next_month_day = '-'.join([year, str(int(month) + 1), "1"])
-                    end = datetime.datetime.strptime(next_month_day, '%Y-%m-%d') - datetime.timedelta(days=1)
-                    end = end.strftime("%Y-%m-%d")
-                    
+                    end = '-'.join([year, month, str(calendar.monthrange(int(year), int(month))[1])])                    
                     self.start      = datetime.datetime.strptime(start, '%Y-%m-%d')
                     self.end        = datetime.datetime.strptime(end, '%Y-%m-%d')
                     
