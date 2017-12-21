@@ -16,7 +16,7 @@ import calendar
 class EexTransparencySpider(scrapy.Spider):
     name = 'eex_transparency'
 
-    # the urls to fetch date range data
+    # the urls to fetch data in history mode
     history_url_list = [
                         'https://www.eex-transparency.com/homepage/power/austria/production/availability/non-usability-/non-usability-history-',
                         'https://www.eex-transparency.com/homepage/power/belgium/production/availability/non-usability/non-usability-history-',
@@ -28,7 +28,8 @@ class EexTransparencySpider(scrapy.Spider):
                         'https://www.eex-transparency.com/homepage/power/italy/production/availability/non-usability/non-usability-history-',
                         'https://www.eex-transparency.com/homepage/power/the-netherlands/production/availability/non-usability/non-usability-history-'
                         ]
-    
+    # the dictionary of urls
+    # this is used to replace history_url_list with a selected country when you're selecting a country
     history_url_list_dict = {
         "austria": 'https://www.eex-transparency.com/homepage/power/austria/production/availability/non-usability-/non-usability-history-',
         "belgium": 'https://www.eex-transparency.com/homepage/power/belgium/production/availability/non-usability/non-usability-history-',
@@ -58,7 +59,8 @@ class EexTransparencySpider(scrapy.Spider):
             'scrapers.pipelines.PostgrePipeline': 500
         }
     }
-
+    
+    # constuctor function of Spider class
     def __init__(self, mode='recent', period=None, country=None):
         super().__init__()
         
@@ -74,9 +76,18 @@ class EexTransparencySpider(scrapy.Spider):
                 else:
                     year = period[0]
                     month = period[1]
+                    
+                    # first day of month
+                    # this is string value
                     start = '-'.join([year, month, "1"])
+                    
+                    # last day of month
+                    # this is string value
                     end = '-'.join([year, month, str(calendar.monthrange(int(year), int(month))[1])])                    
+                    
+                    # this is datetime value
                     self.start      = datetime.datetime.strptime(start, '%Y-%m-%d')
+                    # this is datetime value
                     self.end        = datetime.datetime.strptime(end, '%Y-%m-%d')
                     
             if country is not None:
@@ -85,22 +96,32 @@ class EexTransparencySpider(scrapy.Spider):
                 else:
                     self.history_url_list = [self.history_url_list_dict[country]]
                 
-
+        # current time. This is string value
         now_date = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+        # current time. This is date time value
         self.now_date   = datetime.datetime.strptime(now_date, '%Y-%m-%d')
 
         # postgre database table name definition
+        # "eex_transparency"
         self.table = self.name
-            
+        
+        # 'history' or 'recent'    
         self.mode = mode
+        
+        # instance of ScrapeJS object
         self.scraper = ScrapeJS()
 
+        # Selenium webdriver
         self.driver = webdriver.PhantomJS('./phantomjs/linux/phantomjs')
         # self.driver = webdriver.Chrome('./chromedriver')
 
         # setting log file
         self.log_file_name = 'logs/' + datetime.datetime.utcnow().strftime("%Y-%m-%dT%H-%M-%S") + '.log'
+        
+        # all count of scrated items. This value is saved to log file
         self.item_scraped_count = 0
+        
+        # initialize log info
         with open(self.log_file_name, mode='w+') as log_file:
             if mode == 'history':
                 self.scrape_info = {
@@ -118,9 +139,13 @@ class EexTransparencySpider(scrapy.Spider):
                 }
             json.dump(self.scrape_info, log_file, indent=4)
 
+    # redefined function of scrapy.Spider
+    # This function is called at first after calling of __init__ constructor function
+    # check whether spider is connected target website successfully
     def start_requests(self):
         yield scrapy.Request('https://www.eex-transparency.com/', callback=self.start_requests_selenium)
 
+    # this function is called when spider is connected to target website.
     def start_requests_selenium(self, response):
         print("Connection OK. Start scraping...")
 
@@ -150,12 +175,16 @@ class EexTransparencySpider(scrapy.Spider):
         else:
             print('Parameter Error.')
             yield
-                
+    
+    # this function is called in 'history' mode
+    # fetches data from given url, parse items and yield them to pipelines
     def parse_history(self, url):
         self.driver.get(url)
         
+        # check whether first page is loaded
         first_page_loaded = self._load_page(self.start, self.end, url)
         
+        # if first page is loaded successfully
         if first_page_loaded:
             pass
         else:
@@ -164,7 +193,9 @@ class EexTransparencySpider(scrapy.Spider):
         
         print("[*] Parsing page")
 
+        # get first page data
         data_object = self.driver.execute_script(self.scraper.get_history_table_data())
+        # parse items of first page
         items = self.parse_data_object(data_object)
         if items is None:
             print('Items not found in that url: ', url)
@@ -173,8 +204,11 @@ class EexTransparencySpider(scrapy.Spider):
             for item in items:
                 yield item
             
+            # check where next page exists
             check_next_page = self.driver.execute_script(self.scraper.check_next_page())
             if check_next_page:
+                
+                # if first page exists then repeat to fetch next page data with 'parse_history_details' function
                 self.driver.execute_script(self.scraper.load_next_page())
                 items = self.parse_history_details(url)
                 
@@ -186,6 +220,9 @@ class EexTransparencySpider(scrapy.Spider):
                     for item in items:
                         yield item
     
+    # this function is recursive function 
+    # this function is fetching data until next page not exists
+    # this function is similar with 'page_history'
     def parse_history_details(self, url):
         page_loaded = self._load_page_history(url)
         
@@ -218,6 +255,8 @@ class EexTransparencySpider(scrapy.Spider):
                     for item in items:
                         yield item
 
+    # this function is called in 'recent' mode
+    # fetch 'recent' data from a give url, parse items and yield them to pipelines.
     def parse_recent(self, url):
         self.driver.get(url)
 
@@ -241,15 +280,15 @@ class EexTransparencySpider(scrapy.Spider):
             for item in items:
                 yield item
 
-
+    
+    # this functions checks if current page is loaded and page is empty
+    # and set start and end dates to selenium web browser using 'set_dates' function
+    # returns true when page is loaded successfully
+    # also returns true when page is loaded successfully and page is empty
+    # returns false when page is failed to load
+    # time limit is 20 seconds
     def _load_page(self, start, end, url):
-        """
-        Loads particular date.
-
-        :param date: Date to load
-        :return: Returns True on success.
-        """
-
+        
         if self.mode == 'history':
             print("---- Loading date: ", start, ' ', end, ' ----')
 
@@ -280,7 +319,9 @@ class EexTransparencySpider(scrapy.Spider):
             elif self.mode == 'recent':
                 self._log_failed_data(start, url)
             return False
-        
+    
+    # similar with _load_page function 
+    # this function is called in recursive function 'parse_history_details' for fast load page    
     def _load_page_history(self, url):
         try:
             WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@class='timestamp']")))
@@ -290,6 +331,7 @@ class EexTransparencySpider(scrapy.Spider):
             self._log_failed_data(self.period, url)
             return False
 
+    # this function is called for logging failed data
     def _log_failed_data(self, date, url):
         with open(self.log_file_name, mode='w+') as log_file:
             if self.mode == 'recent':
@@ -304,7 +346,9 @@ class EexTransparencySpider(scrapy.Spider):
                 self.scrape_info['failed_data'][failed_date_str].append(url)
             json.dump(self.scrape_info, log_file, indent=4)
 
-
+    
+    # the function that parse scraped data for using in pipelines
+    # returned items are sent to pipelines
     def parse_data_object(self, data_object):
         """
         Parses data object to items
@@ -334,10 +378,12 @@ class EexTransparencySpider(scrapy.Spider):
                 self.item_scraped_count += 1
                 yield item
 
+# this class is collection of javascript code that is running on selenium web browser
 class ScrapeJS(object):
     """A helper class that generates javascript snippets to use with browser."""
     def __init__(self):
         self._definitions = {
+            # JavaScript code that scrapes items in 'history' mode
             'getHistoryTableData':
                 ('function getHistoryTableData() {\n'
                     'var e = document.getElementById("from");\n'
@@ -346,6 +392,7 @@ class ScrapeJS(object):
                     'return rows_ng;\n'
                 '}\n'
                 ),
+            # JavaScript code that scrapes items in 'recent' mode
             'getRecentTableData':
                 ('function getRecentTableData() {\n'
                     'var e = document.getElementsByClassName("timestamp");\n'
@@ -354,6 +401,9 @@ class ScrapeJS(object):
                     'return rows_ng;\n'
                 '}\n'
                 ),
+            # JavaScript code that set start/end dates to start/end components of selenium web browser
+            # and set 'all' value to 'status' component of selenium web browser (at line 419 and 420)
+            # becuase the default value of 'status' component is 'Active'
             'setDates':
                 ('function setDates(fromDate, tDate) {\n'
                     'var e = document.getElementById("from");\n'
@@ -371,6 +421,8 @@ class ScrapeJS(object):
                     'sc.selectCanceled();\n'
                  '}\n'
                 ),
+            
+            # check that page is empty
             'isEmptyTableData':
                 ('function isEmptyTableData() {\n'
                     'var e = document.querySelectorAll(\'[data-ng-show="noData && !loading && filterActive != false"]\');\n'
@@ -378,6 +430,9 @@ class ScrapeJS(object):
                     'return !classList.contains("ng-hide");\n'
                 '}\n'
                 ),
+            
+            # check that next page exists
+            # if next page exists then returns true
             'checkNextPage':
                 ('function checkNextPage() {\n'
                     'var e = document.getElementsByClassName("next");\n'
@@ -385,6 +440,7 @@ class ScrapeJS(object):
                     'return !classList.contains("ng-hide");\n'
                 '}\n'
                 ),
+            # the code of loading next page data
             'loadNextPage':
                 ('function loadNextPage() {\n'
                     'var e = document.getElementById("from");\n'
